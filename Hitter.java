@@ -17,7 +17,7 @@ public class Hitter extends Player {
         Random random = new Random();
 
         contact = random.nextInt(100);
-        batSpeed = 18 * random.nextDouble() + 60;
+        batSpeed = (int) (18 * random.nextDouble()) + 60;
         barrelControl = random.nextInt(100);
         eye = random.nextInt(100);
 

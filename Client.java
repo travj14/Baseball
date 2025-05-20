@@ -73,10 +73,54 @@ public class Client {
     }
 
     public static void main(String[] args) throws IOException {
+
+        String output;
         Scanner scanner = new Scanner(System.in);
+        AccountManager creator = new AccountManager();
+
+        String account;
+        while (true) {
+            System.out.println("Login (1) or Sign up (2)?");
+            account = scanner.nextLine();
+            if (account.equals("1") || account.equals("2")) {
+                break;
+            }
+            System.out.println("Invalid choice");
+        }
+
+        while (true) {
+            System.out.println("Enter username");
+            
+        }
+
+        if (account.equals("1")) {
+            creator.accountCreator(output, output);
+        }
+
+
+
+
+
+
         System.out.println("Enter team name");
         String username = scanner.nextLine();
-        Socket socket = new Socket("localhost", 1234);
+
+        int portNum;
+        Socket socket;
+
+        while (true) {
+            System.out.println("Enter room number");
+            try {
+                portNum = Integer.parseInt(scanner.nextLine());
+                socket = new Socket("192.168.0.249", portNum);
+                break;
+            } catch (Exception e) {
+                System.out.println("Room number is either invalid or doesn't exist");
+            }
+        }
+
+        System.out.println("Successfully entered game");
+        
         Client client = new Client(socket, username);
         client.listenForMessage();
         client.sendMessage();
