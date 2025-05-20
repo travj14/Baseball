@@ -1,6 +1,7 @@
 import java.net.Socket;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
+import java.net.UnknownHostException;
+import java.util.Scanner;
+import java.io.*;
 
 public class Client {
     private Socket socket;
@@ -13,7 +14,7 @@ public class Client {
             this.socket = socket;
             this.username = username;
             this.bufferedWriter = new BufferedWriter (new OutputStreamWriter(socket.getOutputStream()));
-            this.bufferedReader = new BufferedReader (new InputStreamWriter(socket.getInputStream()));
+            this.bufferedReader = new BufferedReader (new InputStreamReader(socket.getInputStream()));
         } catch (IOException e) {
             closeEverything(socket, bufferedReader, bufferedWriter);
         }
@@ -26,7 +27,7 @@ public class Client {
             bufferedWriter.flush();
 
             Scanner scanner = new Scanner(System.in);
-            while (socket.isConnected) {
+            while (socket.isConnected()) {
                 String messageToSend = scanner.nextLine();
                 bufferedWriter.write(username + ": " + messageToSend);
                 bufferedWriter.newLine(); 
@@ -45,7 +46,7 @@ public class Client {
 
                 while(socket.isConnected()) {
                     try {
-                        msgFromGC = bufferedReader.nextLine();
+                        msgFromGC = bufferedReader.readLine();
                         System.out.println(msgFromGC);
                     } catch (IOException e) {
                         closeEverything(socket, bufferedReader, bufferedWriter);
@@ -71,7 +72,7 @@ public class Client {
         }
     }
 
-    puiblic static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter team name");
         String username = scanner.nextLine();
@@ -80,4 +81,4 @@ public class Client {
         client.listenForMessage();
         client.sendMessage();
     }
-}
+} 

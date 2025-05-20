@@ -3,23 +3,24 @@ import java.net.Socket;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
+import java.io.*;
 
 public class ClientHandler implements Runnable {
 
-    public static ArrayList<ClientHander> cliendHandlers = new ArrayList<>();
+    public static ArrayList<ClientHandler> clientHandler = new ArrayList<>();
     private Socket socket;
     private BufferedReader bufferedReader;
     private BufferedWriter bufferedWriter;
-    private String clinetUsername;
+    private String clientUsername;
 
-    public ClientHander(Socket socket) {
+    public ClientHandler(Socket socket) {
         try {
             this.socket = socket;
             this.bufferedWriter = new BufferedWriter (new OutputStreamWriter(socket.getOutputStream()));
-            this.bufferedReader = new BufferedReader (new InputStreamWriter(socket.getInputStream()));
-            this.clinetUsername = bufferedReader.readLine();
+            this.bufferedReader = new BufferedReader (new InputStreamReader(socket.getInputStream()));
+            this.clientUsername = bufferedReader.readLine();
 
-            clientHandlers.add(this);
+            clientHandler.add(this);
             broadCastMessage("SERVER: " + clientUsername + " has entered game");
         } catch (IOException e) {
             closeEverything(socket, bufferedReader, bufferedWriter);
@@ -42,9 +43,9 @@ public class ClientHandler implements Runnable {
     }
 
     public void broadCastMessage(String messageToSend) {
-        for (ClientHandler clientHandler: clientHandlers) {
+        for (ClientHandler clientHandler: clientHandler) {
             try {
-                if (!clientHandler.clinetUsername.equals(clientUsername)) {
+                if (!clientHandler.clientUsername.equals(clientUsername)) {
                     clientHandler.bufferedWriter.write(messageToSend);
                     clientHandler.bufferedWriter.newLine();
                     clientHandler.bufferedWriter.flush();
