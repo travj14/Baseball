@@ -24,7 +24,12 @@ public class Hitter extends Player {
         approach = (String) getRandomElement(new Object["contact", "aggressive", "power", "passive", "balanced"], 5);
         tendency = (String) getRandomElement(new Object["flyball", "linedrive", "groundball"], 3)
 
-        
+        bbDirection = new Integer[3];
+
+        bbDirection[0] = 25 + random.getNextInt(30);
+        bbDirection[1] = 21 + random.getNextInt(30);
+        bbDirection[2] = 100 - bbDirection[1] - bbDirection[0];
+
     }
 
     private Object getRandomElement(Object[] array, int size) {
