@@ -73,8 +73,6 @@ public class Client {
     }
 
     public static void main(String[] args) throws IOException {
-
-        String output;
         Scanner scanner = new Scanner(System.in);
         AccountManager creator = new AccountManager();
 
@@ -88,22 +86,48 @@ public class Client {
             System.out.println("Invalid choice");
         }
 
+        String username;
         while (true) {
             System.out.println("Enter username");
-            
+            username = scanner.nextLine();
+            if (username.length() > 12) {
+                System.out.println("Username must be 12 characters or less");
+            } else {
+                if (account.equals("1")) {
+                    if (creator.usernameExists(username)) {
+                        break;
+                    }
+                    System.out.println("Username not in database");
+                } else {
+                    if (creator.usernameExists(username)) {
+                        System.out.println("Username already in use");
+                    } else { 
+                        break; 
+                    }
+                }
+            }
         }
 
-        if (account.equals("1")) {
-            creator.accountCreator(output, output);
+        String password;
+        while (true) {
+            System.out.println("Enter password");
+            password = scanner.nextLine();
+
+            if (account.equals("1")) {
+                if (creator.passwordCorrect(username, password)) {
+                    System.out.println("Login successful");
+                    break;
+                } else {
+                    System.out.println("Password doesn't not match");
+                }
+            } else {
+                if (creator.accountCreator(username, password)) {
+                    System.out.println("Account created successfully");
+                    break;
+                }
+                System.out.println("Error occured");
+            }
         }
-
-
-
-
-
-
-        System.out.println("Enter team name");
-        String username = scanner.nextLine();
 
         int portNum;
         Socket socket;
