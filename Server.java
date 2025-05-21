@@ -1,6 +1,7 @@
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.io.*;
+import java.util.Scanner;
 
 public class Server {
 
@@ -40,9 +41,24 @@ public class Server {
     }
 
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(1234);
+        Scanner scanner = new Scanner(System.in);
+        int roomNum;
+        ServerSocket serverSocket;
+
+        while (true) {
+            System.out.println("Enter room number");
+            try {
+                roomNum = Integer.parseInt(scanner.nextLine());
+                serverSocket = new ServerSocket(roomNum);
+                break;
+            } catch (Exception e) {
+                System.out.println("Room number is either invalid or already exists");
+            }
+        }
+
         Server server = new Server(serverSocket);
         server.startServer();
+        scanner.close();
     }
 
 }
