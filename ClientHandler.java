@@ -77,5 +77,9 @@ public class ClientHandler implements Runnable {
             e.printStackTrace();
         }
     }
+
+    public boolean equals(ClientHandler otherClient) {
+        return (clientUsername.equals(otherClient.clientUsername));
+    }
     
 }

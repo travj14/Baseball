@@ -145,6 +145,7 @@ public class Client {
 
         System.out.println("Successfully entered game");
         
+        
         Client client = new Client(socket, username);
         client.listenForMessage();
         client.sendMessage();
