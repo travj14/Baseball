@@ -12,4 +12,15 @@ public class Player {
 
     private int athleticism;
     private int reads;
+
+    private int id;
+    private String name;
+    
+    public int getID() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

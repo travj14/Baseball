@@ -81,5 +81,9 @@ public class ClientHandler implements Runnable {
     public boolean equals(ClientHandler otherClient) {
         return (clientUsername.equals(otherClient.clientUsername));
     }
+
+    public String getUsername() {
+        return clientUsername;
+    }
     
 }
