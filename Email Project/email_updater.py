@@ -4,9 +4,9 @@ from email.mime.multipart import MIMEMultipart
 
 
 def send_email(email, password, message):
-    sender_email = email #"travisjohnson0325@gmail.com"
-    receiver_email = email #"travisjohnson0325@gmail.com"
-    password = password #"qadj twvt vbhd lcwy"
+    sender_email = email
+    receiver_email = email
+    password = password
 
     message = MIMEMultipart("alternative")
     message["Subject"] = "Test Email to Self"
