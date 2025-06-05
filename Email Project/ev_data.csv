@@ -1,0 +1,793 @@
+Rk.,,Batter,,Pitcher,PA,Inning,Result,EV,LA,Dist,Bat_speed,Pitch_velo,xBA,numParks
+1,,Bryan Reynolds,,Josh Hader,63,9,Lineout,107.9,19,349,72.6,82.4,.760,0/30
+2,,Victor Caratini,,Kyle Nicolas,62,9,Pop Out,72.2,67,142,72.1,96.6,.000,
+3,,Yainer Diaz,,Kyle Nicolas,61,9,Lineout,105.4,18,354,69.3,95.8,.550,0/30
+4,,Christian Walker,,Dennis Santana,60,9,Flyout,92.6,31,341,⚡75.7,94.3,.140,0/30
+5,,Jose Altuve,,Dennis Santana,59,9,Field Error,55.8,-11,12,55.8,89.3,.080,
+6,,Isaac Paredes,,Dennis Santana,58,9,Home Run,103.6,32,403,67.6,92.6,.770,30/30
+7,,Jeremy Peña,,Dennis Santana,57,9,Single,74.4,-1,23,69.6,88.0,.140,
+8,,Andrew McCutchen,,Bryan Abreu,56,8,Lineout,89.7,19,294,73.7,87.4,.530,
+9,,Oneil Cruz,,Bryan Abreu,55,8,Forceout,82.6,-3,32,68.1,85.2,.160,
+10,,Isiah Kiner-Falefa,,Bryan Abreu,54,8,Single,94.6,-3,39,66.5,95.5,.330,
+11,,Jacob Melton,,Paul Skenes,53,8,Groundout,73.3,-35,4,69.6,97.6,.060,
+12,,Ke'Bryan Hayes,,Shawn Dubin,50,7,Groundout,76.7,-34,5,72.4,82.7,.040,
+13,,Henry Davis,,Shawn Dubin,49,7,Pop Out,81.3,60,164,⚡76.1,83.9,.020,
+14,,Nick Gonzales,,Shawn Dubin,48,7,Single,49.1,-28,7,69.4,81.8,.210,
+15,,Christian Walker,,Paul Skenes,45,7,Home Run,102.1,33,394,⚡81.2,86.4,.560,30/30
+16,,Jose Altuve,,Paul Skenes,44,7,Flyout,84.3,51,240,⚡77.2,98.7,.010,
+17,,Spencer Horwitz,,Lance McCullers Jr.,42,6,Groundout,95.9,,32,⚡75.4,87.4,.310,
+18,,Isaac Paredes,,Paul Skenes,40,6,Lineout,81.2,11,162,62.8,85.7,.500,
+19,,Jeremy Peña,,Paul Skenes,39,6,Groundout,69.1,-9,13,71.6,84.9,.060,
+20,,Jacob Melton,,Paul Skenes,38,6,Groundout,69.0,-42,3,72.8,93.1,.150,
+21,,Andrew McCutchen,,Lance McCullers Jr.,37,5,Lineout,101.4,21,365,72.4,92.7,.420,0/30
+22,,Isiah Kiner-Falefa,,Lance McCullers Jr.,35,5,Single,76.9,18,216,71.7,83.7,.960,
+23,,Ke'Bryan Hayes,,Lance McCullers Jr.,34,5,Flyout,96.6,35,365,73.3,89.2,.180,0/30
+24,,Jake Meyers,,Paul Skenes,32,5,Pop Out,79.0,71,113,62.0,85.4,.010,
+25,,Victor Caratini,,Paul Skenes,31,5,Flyout,101.3,35,389,71.4,98.0,.380,5/30
+26,,Nick Gonzales,,Lance McCullers Jr.,29,4,Forceout,101.4,,50,70.8,92.0,.410,
+27,,Alexander Canario,,Lance McCullers Jr.,28,4,Single,103.5,8,135,⚡77.4,91.3,.720,
+28,,Spencer Horwitz,,Lance McCullers Jr.,27,4,Flyout,100.1,29,367,70.6,81.3,.540,1/30
+29,,Yainer Diaz,,Paul Skenes,26,4,Groundout,101.4,-16,6,73.0,98.6,.200,
+30,,Jose Altuve,,Paul Skenes,24,4,Single,50.1,-21,8,50.3,86.5,.140,
+31,,Bryan Reynolds,,Lance McCullers Jr.,22,3,Flyout,96.2,37,358,71.7,87.5,.090,0/30
+32,,Andrew McCutchen,,Lance McCullers Jr.,21,3,Flyout,97.3,29,384,73.0,82.4,.300,24/30
+33,,Jeremy Peña,,Paul Skenes,19,3,GIDP,63.0,1,37,74.9,93.8,.150,
+34,,Cam Smith,,Paul Skenes,17,3,Groundout,60.7,-9,12,72.2,98.3,.100,
+35,,Jake Meyers,,Paul Skenes,16,3,Double,103.6,11,241,73.0,98.7,.920,
+36,,Isiah Kiner-Falefa,,Lance McCullers Jr.,15,2,Forceout,82.1,,36,67.8,90.8,.200,
+37,,Victor Caratini,,Paul Skenes,10,2,Groundout,88.4,8,111,74.0,98.2,.450,
+38,,Christian Walker,,Paul Skenes,8,2,Flyout,96.3,51,,74.9,83.2,.010,
+39,,Spencer Horwitz,,Lance McCullers Jr.,7,1,Flyout,95.5,28,342,71.8,83.4,.280,0/30
+40,,Bryan Reynolds,,Lance McCullers Jr.,6,1,Groundout,82.8,-29,6,72.1,82.7,.040,
+41,,Andrew McCutchen,,Lance McCullers Jr.,5,1,Groundout,77.1,-5,18,71.0,82.2,.120,
+42,,Jose Altuve,,Paul Skenes,3,1,Pop Out,60.6,79,41,62.6,84.6,.000,
+43,,Isaac Paredes,,Paul Skenes,2,1,Groundout,102.7,-20,5,68.7,99.0,.130,
+44,,Jeremy Peña,,Paul Skenes,1,1,Flyout,96.5,25,363,73.0,99.4,.300,0/30
+1,,Heriberto Hernandez,,Seth Halvorsen,73,9,Flyout,105.9,31,402,74.3,91.1,.890,14/30
+2,,Connor Norby,,Seth Halvorsen,72,9,Flyout,83.7,47,275,70.6,88.9,.010,
+3,,Liam Hicks,,Seth Halvorsen,71,9,Pop Out,61.2,87,46,66.4,100.0,.000,
+4,,Jordan Beck,,Tyler Phillips,70,9,Flyout,68.5,50,186,72.7,83.2,.170,
+5,,Tyler Freeman,,Tyler Phillips,69,9,Single,96.1,14,263,⚡76.6,82.3,.900,
+6,,Mickey Moniak,,Tyler Phillips,68,9,Forceout,97.4,-14,9,⚡75.8,94.4,.260,
+7,,Orlando Arcia,,Tyler Phillips,66,9,Groundout,100.4,-18,6,72.5,95.1,.140,
+8,,Eric Wagaman,,Victor Vodnik,65,8,Lineout,91.4,21,304,72.3,98.9,.280,0/30
+9,,Otto Lopez,,Victor Vodnik,64,8,Groundout,60.5,-53,4,71.1,86.8,.280,
+10,,Kyle Stowers,,Victor Vodnik,63,8,Groundout,101.8,-16,6,⚡78.7,98.5,.220,
+11,,Brenton Doyle,,Anthony Bender,62,8,Lineout,94.9,7,121,70.6,96.8,.560,
+12,,Ryan McMahon,,Anthony Bender,61,8,Groundout,94.0,-15,8,⚡78.4,89.4,.130,
+13,,Hunter Goodman,,Anthony Bender,60,8,Home Run,105.2,22,369,74.8,84.6,.800,28/30
+14,,Agustín Ramírez,,Victor Vodnik,58,7,Groundout,61.5,-40,4,73.6,87.0,.130,
+15,,Jesús Sánchez,,Jimmy Herget,57,7,Single,96.7,7,128,,86.5,.570,
+16,,Xavier Edwards,,Jimmy Herget,56,7,Single,96.1,15,240,67.4,77.5,.850,
+17,,Javier Sanoja,,Jimmy Herget,55,7,Groundout,94.3,-3,32,62.9,79.3,.280,
+18,,Jordan Beck,,Calvin Faucher,53,7,Flyout,90.7,42,284,61.3,91.9,.010,
+19,,Tyler Freeman,,Calvin Faucher,52,7,Single,75.1,19,216,71.3,90.1,.970,
+20,,Mickey Moniak,,Calvin Faucher,51,7,Flyout,90.4,44,280,⚡75.5,89.6,.010,
+21,,Kyle Farmer,,Calvin Faucher,50,7,Lineout,86.8,12,153,65.9,84.6,.720,
+22,,Dane Myers,,Jimmy Herget,49,6,GIDP,100.1,-5,24,71.6,77.0,.320,
+23,,Eric Wagaman,,Jimmy Herget,48,6,Single,87.1,16,199,⚡78.2,77.1,.990,
+24,,Kyle Stowers,,Jimmy Herget,46,6,Single,101.6,6,114,⚡78.9,86.3,.640,
+25,,Orlando Arcia,,Sandy Alcantara,45,6,Groundout,64.5,-33,6,⚡75.6,97.8,.050,
+26,,Brenton Doyle,,Sandy Alcantara,44,6,Groundout,75.5,4,69,69.3,99.2,.260,
+27,,Ryan McMahon,,Sandy Alcantara,43,6,Lineout,100.3,8,155,72.6,96.9,.590,
+28,,Agustín Ramírez,,Juan Mejia,42,5,Groundout,77.8,-35,4,72.7,83.8,.040,
+29,,Jesús Sánchez,,Juan Mejia,41,5,Lineout,52.9,26,134,67.2,98.2,.170,
+30,,Xavier Edwards,,Juan Mejia,40,5,Sac Bunt,28.6,-27,5,8.3,93.7,.280,
+31,,Thairo Estrada,,Sandy Alcantara,37,5,Sac Fly,94.0,30,350,67.5,87.1,.170,1/30
+32,,Jordan Beck,,Sandy Alcantara,36,5,Single,101.1,13,223,66.2,98.1,.910,
+33,,Tyler Freeman,,Sandy Alcantara,35,5,Single,79.3,-60,1,70.5,98.5,.350,
+34,,Kyle Farmer,,Sandy Alcantara,33,5,Groundout,77.5,-9,14,64.4,97.5,.070,
+35,,Nick Fortes,,Juan Mejia,32,4,Groundout,56.7,-59,3,72.8,96.4,.230,
+36,,Dane Myers,,Juan Mejia,31,4,Lineout,103.3,19,347,69.8,82.8,.450,0/30
+37,,Eric Wagaman,,Juan Mejia,30,4,Groundout,99.2,-2,34,74.7,82.6,.360,
+38,,Orlando Arcia,,Sandy Alcantara,29,4,Groundout,83.7,-65,1,⚡77.0,98.6,.370,
+39,,Brenton Doyle,,Sandy Alcantara,28,4,Groundout,91.2,-5,24,69.5,87.3,.280,
+40,,Hunter Goodman,,Sandy Alcantara,26,4,Double,100.8,4,83,72.6,85.6,.540,
+41,,Otto Lopez,,Chase Dollander,25,3,Groundout,81.2,-9,16,71.5,97.9,.120,
+42,,Kyle Stowers,,Chase Dollander,24,3,Single,105.9,5,117,⚡76.7,98.1,.610,
+43,,Agustín Ramírez,,Chase Dollander,23,3,Fielders Choice Out,100.2,-13,12,⚡78.9,78.1,.200,
+44,,Jesús Sánchez,,Chase Dollander,22,3,Single,94.5,10,162,72.6,79.3,.710,
+45,,Xavier Edwards,,Chase Dollander,21,3,Flyout,96.8,27,370,70.7,98.1,.330,0/30
+46,,Thairo Estrada,,Sandy Alcantara,18,3,Groundout,80.6,-18,9,69.0,97.9,.060,
+47,,Jordan Beck,,Sandy Alcantara,17,3,Single,68.6,-63,2,67.7,98.5,.300,
+48,,Tyler Freeman,,Sandy Alcantara,16,3,Field Error,93.6,-25,5,68.1,98.0,.090,
+49,,Mickey Moniak,,Sandy Alcantara,15,3,Flyout,97.3,31,355,⚡76.1,86.1,.250,0/30
+50,,Kyle Farmer,,Sandy Alcantara,14,3,Groundout,92.6,-4,28,74.6,90.6,.240,
+51,,Dane Myers,,Chase Dollander,13,2,Flyout,91.6,49,263,71.2,79.1,.000,
+52,,Eric Wagaman,,Chase Dollander,12,2,Groundout,79.1,-5,18,73.2,78.5,.100,
+53,,Orlando Arcia,,Sandy Alcantara,10,2,Groundout,68.8,-46,4,⚡82.1,97.5,.200,
+54,,Brenton Doyle,,Sandy Alcantara,9,2,Flyout,90.9,36,300,71.2,86.9,.040,0/30
+55,,Ryan McMahon,,Sandy Alcantara,8,2,Lineout,78.8,12,161,70.9,91.8,.410,
+56,,Kyle Stowers,,Chase Dollander,7,1,Groundout,99.1,-14,9,⚡78.4,98.6,.240,
+57,,Jesús Sánchez,,Chase Dollander,5,1,Flyout,91.1,29,300,72.0,98.7,.070,0/30
+58,,Xavier Edwards,,Chase Dollander,4,1,Groundout,97.8,2,79,72.4,98.4,.470,
+59,,Thairo Estrada,,Sandy Alcantara,2,1,Groundout,70.0,10,112,70.4,98.2,.300,
+1,,Keibert Ruiz,,Ryan Pressly,77,9,Groundout,100.3,-18,9,67.5,89.2,.120,
+2,,Robert Hassell III,,Ryan Pressly,76,9,Groundout,72.6,3,56,68.7,92.6,.130,
+3,,Josh Bell,,Ryan Pressly,75,9,Groundout,61.3,-54,4,⚡75.3,87.1,.250,
+4,,Luis García Jr.,,Ryan Pressly,74,9,Single,106.1,10,202,⚡77.0,82.0,.850,
+5,,Dansby Swanson,,Jackson Rutledge,73,9,Groundout,100.9,-6,22,68.0,97.1,.330,
+6,,Michael Busch,,Jackson Rutledge,72,9,Flyout,90.8,56,240,68.7,90.6,.010,
+7,,Carson Kelly,,Jackson Rutledge,71,9,Groundout,62.3,-34,7,74.6,86.8,.060,
+8,,Nathaniel Lowe,,Génesis Cabrera,70,8,Groundout,102.0,1,56,73.8,95.6,.460,
+9,,James Wood,,Génesis Cabrera,69,8,Flyout,95.9,30,347,⚡80.3,95.9,.220,0/30
+10,,CJ Abrams,,Génesis Cabrera,68,8,Flyout,78.0,43,247,71.1,95.4,.050,
+11,,Seiya Suzuki,,Zach Brzykcy,66,8,Groundout,73.4,-5,22,70.1,94.3,.090,
+12,,Daylen Lile,,Caleb Thielbar,64,7,Flyout,64.4,31,208,65.9,81.7,.830,
+13,,José Tena,,Caleb Thielbar,63,7,Double,98.4,27,384,72.2,92.3,.460,0/30
+14,,Keibert Ruiz,,Caleb Thielbar,62,7,Flyout,83.7,38,292,61.6,93.7,.010,
+15,,Matt Shaw,,Zach Brzykcy,60,7,Forceout,85.9,3,65,70.2,92.6,.380,
+16,,Justin Turner,,Zach Brzykcy,59,7,Single,87.8,56,207,61.3,93.1,.010,
+17,,Nico Hoerner,,Zach Brzykcy,58,7,Pop Out,91.7,65,143,72.7,93.4,.010,
+18,,Dansby Swanson,,Zach Brzykcy,57,7,Flyout,97.8,51,266,71.2,93.6,.010,
+19,,Michael Busch,,Zach Brzykcy,56,7,Home Run,109.1,36,410,71.7,94.0,.880,29/30
+20,,Josh Bell,,Caleb Thielbar,55,6,GIDP,103.4,-3,36,⚡76.3,91.6,.390,
+21,,Luis García Jr.,,Cade Horton,54,6,Single,79.2,19,232,69.1,83.0,.990,
+22,,James Wood,,Cade Horton,52,6,Double,116.0,15,376,⚡79.9,95.1,.780,0/30
+23,,Carson Kelly,,Eduardo Salazar,51,6,Groundout,97.2,-9,16,70.1,94.6,.200,
+24,,CJ Abrams,,Cade Horton,47,5,Groundout,83.3,-13,11,67.2,95.8,.110,
+25,,Daylen Lile,,Cade Horton,46,5,Groundout,64.2,-6,13,74.1,81.9,.110,
+26,,Matt Shaw,,Cole Henry,44,5,Lineout,107.6,18,352,70.9,93.3,.690,0/30
+27,,Nico Hoerner,,Cole Henry,42,5,Single,85.8,4,94,69.8,95.0,.350,
+28,,Carson Kelly,,Andrew Chafin,39,5,Single,73.2,17,161,73.3,89.6,.810,
+29,,Seiya Suzuki,,Trevor Williams,37,5,Sac Fly,103.1,49,298,⚡75.9,86.3,.030,
+30,,Ian Happ,,Trevor Williams,36,5,Single,54.7,-43,5,72.9,81.7,.150,
+31,,Matt Shaw,,Trevor Williams,35,5,Double,104.4,24,340,73.8,85.7,.850,8/30
+32,,Keibert Ruiz,,Cade Horton,34,4,Groundout,70.0,-3,30,61.1,95.7,.070,
+33,,Robert Hassell III,,Cade Horton,33,4,Pop Out,80.9,72,116,71.7,83.3,.000,
+34,,Josh Bell,,Cade Horton,32,4,Single,104.2,21,391,71.1,83.2,.690,0/30
+35,,Luis García Jr.,,Cade Horton,31,4,Lineout,94.5,16,276,73.4,83.0,.650,
+36,,Justin Turner,,Trevor Williams,30,4,Flyout,96.6,31,381,68.0,86.7,.250,0/30
+37,,Nico Hoerner,,Trevor Williams,29,4,Flyout,83.2,46,232,72.9,87.1,.020,
+38,,Dansby Swanson,,Trevor Williams,28,4,Sac Fly,101.4,33,366,69.0,87.7,.450,6/30
+39,,Michael Busch,,Trevor Williams,27,4,Single,85.9,10,121,71.0,77.4,.490,
+40,,Carson Kelly,,Trevor Williams,26,4,Fielders Choice,102.6,-7,17,⚡75.7,87.8,.310,
+41,,Pete Crow-Armstrong,,Trevor Williams,25,4,Double,90.5,15,205,⚡81.7,77.1,.990,
+42,,Nathaniel Lowe,,Cade Horton,24,3,Lineout,82.4,27,266,73.7,95.9,.140,
+43,,James Wood,,Cade Horton,23,3,Sac Fly,82.1,44,255,⚡82.5,97.0,.010,
+44,,CJ Abrams,,Cade Horton,22,3,Groundout,82.4,-15,14,71.8,96.7,.130,
+45,,Daylen Lile,,Cade Horton,21,3,Double,75.3,-14,11,71.2,86.6,.060,
+46,,Seiya Suzuki,,Trevor Williams,19,3,Pop Out,70.9,71,89,71.8,88.7,.000,
+47,,Ian Happ,,Trevor Williams,18,3,Flyout,99.0,26,355,70.4,81.8,.470,0/30
+48,,Keibert Ruiz,,Cade Horton,16,2,Groundout,83.5,-31,3,64.0,85.0,.030,
+49,,Robert Hassell III,,Cade Horton,15,2,Groundout,102.1,-11,9,69.6,96.2,.220,
+50,,Josh Bell,,Cade Horton,14,2,Groundout,83.2,-14,8,67.7,83.9,.070,
+51,,Justin Turner,,Trevor Williams,13,2,Flyout,95.6,37,351,71.6,88.4,.090,1/30
+52,,Nico Hoerner,,Trevor Williams,12,2,Flyout,71.7,53,187,63.4,76.7,.130,
+53,,Dansby Swanson,,Trevor Williams,11,2,Sac Fly,97.6,30,376,70.8,77.8,.390,0/30
+54,,Michael Busch,,Trevor Williams,10,2,Triple,83.7,24,233,⚡76.5,87.9,.230,
+55,,Luis García Jr.,,Cade Horton,8,1,Single,100.6,11,234,68.8,95.5,.910,
+56,,Nathaniel Lowe,,Cade Horton,7,1,Groundout,68.3,-13,11,71.6,82.6,.060,
+57,,CJ Abrams,,Cade Horton,5,1,Single,75.3,23,246,73.4,95.7,.920,
+1,,Bo Naylor,,Devin Williams,67,9,Flyout,92.7,24,323,73.2,85.7,.150,0/30
+2,,Daniel Schneemann,,Devin Williams,66,9,Single,94.7,-5,16,70.2,84.2,.280,
+3,,Carlos Santana,,Devin Williams,64,9,Double,95.0,23,342,71.8,94.2,.160,0/30
+4,,Kyle Manzardo,,Devin Williams,63,9,Flyout,92.7,50,274,66.0,95.4,.010,
+5,,Paul Goldschmidt,,Kolby Allard,62,8,Flyout,83.6,34,271,⚡75.5,86.4,.010,
+6,,Cody Bellinger,,Kolby Allard,61,8,Single,97.5,11,205,65.8,89.7,.870,
+7,,Ben Rice,,Kolby Allard,59,8,Groundout,76.7,-19,7,70.9,83.8,.050,
+8,,José Ramírez,,Mark Leiter Jr.,58,8,Groundout,90.7,8,122,⚡75.4,85.2,.530,
+9,,Angel Martínez,,Mark Leiter Jr.,57,8,Lineout,102.1,14,111,69.0,93.2,.790,
+10,,Nolan Jones,,Mark Leiter Jr.,55,8,Flyout,76.3,48,237,72.0,87.0,.090,
+11,,Trent Grisham,,Kolby Allard,54,7,Flyout,95.0,32,,69.3,84.4,.150,
+12,,DJ LeMahieu,,Kolby Allard,53,7,Lineout,106.9,17,352,,90.0,.590,0/30
+13,,J.C. Escarra,,Tanner Bibee,52,7,Lineout,90.4,24,326,59.7,95.2,.130,0/30
+14,,Anthony Volpe,,Tanner Bibee,51,7,Home Run,102.2,27,372,70.5,80.5,.700,29/30
+15,,Jazz Chisholm Jr.,,Tanner Bibee,50,7,Home Run,105.7,24,358,72.8,92.7,.930,2/30
+16,,Bo Naylor,,Carlos Rodón,49,7,Flyout,94.4,48,263,⚡77.0,87.4,.000,
+17,,Gabriel Arias,,Carlos Rodón,47,7,Single,108.5,9,224,⚡77.5,93.5,.750,
+18,,Carlos Santana,,Carlos Rodón,46,7,Lineout,99.1,19,322,72.3,85.2,.310,0/30
+19,,David Fry,,Carlos Rodón,45,7,Single,102.0,-8,10,70.3,94.1,.250,
+20,,José Ramírez,,Carlos Rodón,44,7,Single,97.9,-13,6,70.7,85.3,.210,
+21,,Aaron Judge,,Tanner Bibee,41,6,Flyout,110.0,46,335,⚡77.4,78.9,.340,0/30
+22,,Angel Martínez,,Carlos Rodón,40,6,Flyout,90.0,45,285,71.7,86.3,.010,
+23,,Steven Kwan,,Carlos Rodón,39,6,Groundout,96.4,-5,22,70.8,91.6,.280,
+24,,Ben Rice,,Tanner Bibee,37,5,Groundout,107.4,-1,45,69.9,94.0,.490,
+25,,Trent Grisham,,Tanner Bibee,36,5,Field Error,100.1,2,59,71.2,82.1,.450,
+26,,DJ LeMahieu,,Tanner Bibee,35,5,Single,93.6,18,251,68.9,95.6,.500,
+27,,Anthony Volpe,,Tanner Bibee,33,5,Lineout,106.2,17,314,74.3,95.2,.550,0/30
+28,,Jazz Chisholm Jr.,,Tanner Bibee,32,5,Single,70.9,39,230,68.5,83.1,.470,
+29,,Paul Goldschmidt,,Tanner Bibee,31,5,Groundout,95.1,-11,17,71.0,95.6,.190,
+30,,Bo Naylor,,Carlos Rodón,30,5,Groundout,74.6,-16,8,72.1,94.3,.050,
+31,,Will Wilson,,Carlos Rodón,29,5,Groundout,65.5,-13,13,74.9,95.4,.040,
+32,,Cody Bellinger,,Tanner Bibee,27,4,Pop Out,71.4,87,36,⚡75.3,85.9,.000,
+33,,Ben Rice,,Tanner Bibee,25,4,Groundout,105.3,-2,34,69.6,79.8,.430,
+34,,Trent Grisham,,Tanner Bibee,24,4,Flyout,92.2,42,325,⚡77.5,95.7,.010,0/30
+35,,Carlos Santana,,Carlos Rodón,23,4,Lineout,106.2,14,318,71.1,94.1,.740,0/30
+36,,José Ramírez,,Carlos Rodón,21,4,Pop Out,85.5,87,36,⚡78.1,94.3,.000,
+37,,DJ LeMahieu,,Tanner Bibee,20,3,Groundout,91.5,4,95,61.3,95.8,.450,
+38,,J.C. Escarra,,Tanner Bibee,19,3,Flyout,91.1,27,350,73.5,95.7,.110,0/30
+39,,Anthony Volpe,,Tanner Bibee,18,3,Groundout,69.2,-46,2,68.1,95.8,.220,
+40,,Angel Martínez,,Carlos Rodón,17,3,Groundout,101.9,-8,10,⚡76.7,85.0,.300,
+41,,Steven Kwan,,Carlos Rodón,16,3,Pop Out,77.1,72,87,63.5,95.5,.000,
+42,,Jazz Chisholm Jr.,,Tanner Bibee,14,2,Flyout,87.8,40,291,⚡76.5,83.9,.010,
+43,,Cody Bellinger,,Tanner Bibee,12,2,Groundout,89.1,-33,4,69.9,96.7,.060,
+44,,Bo Naylor,,Carlos Rodón,11,2,Flyout,92.0,27,348,69.9,93.3,.090,0/30
+45,,José Ramírez,,Carlos Rodón,3,1,Single,72.5,25,235,73.1,93.5,.970,
+46,,Angel Martínez,,Carlos Rodón,2,1,Single,90.8,12,162,73.5,82.9,.830,
+47,,Steven Kwan,,Carlos Rodón,1,1,Groundout,66.0,-10,15,65.7,94.2,.080,
+1,,Bo Bichette,,Carlos Hernández,80,9,Flyout,74.8,35,258,73.3,85.3,.150,
+2,,Andrés Giménez,,Carlos Hernández,79,9,Pop Out,68.3,61,149,⚡82.1,86.4,.010,
+3,,Alec Bohm,,Braydon Fisher,75,9,Single,57.9,-71,3,72.1,88.4,.180,
+4,,Nathan Lukes,,Max Lazar,73,8,GIDP,96.9,-6,12,68.8,92.1,.250,
+5,,Addison Barger,,Max Lazar,71,8,Home Run,100.8,34,373,⚡81.5,92.3,.410,29/30
+6,,Bryce Harper,,Erik Swanson,68,8,Pop Out,85.9,65,179,⚡75.2,84.2,.010,
+7,,Trea Turner,,Erik Swanson,67,8,Home Run,100.1,25,373,⚡79.9,82.4,.510,19/30
+8,,Bryson Stott,,Erik Swanson,66,8,Flyout,79.0,50,233,65.3,93.9,.040,
+9,,Brandon Marsh,,Erik Swanson,65,8,Pop Out,70.4,69,127,73.2,83.3,.000,
+10,,Vladimir Guerrero Jr.,,Joe Ross,64,7,Groundout,94.5,-3,31,⚡79.7,87.9,.260,
+11,,Andrés Giménez,,Joe Ross,62,7,Lineout,73.8,16,164,68.7,89.6,.710,
+12,,Nick Castellanos,,Paxton Schultz,59,7,Forceout,68.2,-9,17,64.7,86.4,.060,
+13,,Alec Bohm,,Paxton Schultz,58,7,Single,95.8,15,249,71.7,94.7,.850,
+14,,Myles Straw,,Cristopher Sánchez,57,6,Groundout,69.1,-21,5,61.5,86.2,.040,
+15,,Ernie Clement,,Cristopher Sánchez,55,6,Flyout,89.2,43,276,⚡76.0,94.8,.000,
+16,,Addison Barger,,Cristopher Sánchez,54,6,Single,62.7,-53,2,66.2,94.0,.310,
+17,,Trea Turner,,Paxton Schultz,51,6,Single,103.7,-29,5,⚡84.0,87.0,.170,
+18,,Brandon Marsh,,Eric Lauer,49,6,Flyout,98.8,37,340,70.5,90.1,.180,0/30
+19,,Alejandro Kirk,,Cristopher Sánchez,48,5,Groundout,64.4,-37,6,,84.6,.050,
+20,,Bo Bichette,,Cristopher Sánchez,45,5,Single,101.2,-9,18,68.8,95.2,.250,
+21,,Myles Straw,,Cristopher Sánchez,43,5,Flyout,81.6,36,294,70.0,87.2,.010,
+22,,Davis Schneider,,Cristopher Sánchez,42,5,Home Run,103.2,33,372,68.4,83.4,.560,25/30
+23,,J.T. Realmuto,,Eric Lauer,41,5,Groundout,95.4,-6,20,59.1,76.4,.310,
+24,,Max Kepler,,Eric Lauer,40,5,Flyout,80.0,39,273,⚡75.5,78.2,.020,
+25,,Ernie Clement,,Cristopher Sánchez,38,4,Groundout,88.9,-26,6,71.1,95.3,.070,
+26,,Addison Barger,,Cristopher Sánchez,37,4,Groundout,80.9,-61,1,⚡76.1,86.3,.340,
+27,,Alec Bohm,,Eric Lauer,35,4,Pop Out,68.1,71,100,71.2,92.6,.000,
+28,,Kyle Schwarber,,Eric Lauer,34,4,Flyout,93.1,54,240,⚡76.3,84.9,.010,
+29,,Bryce Harper,,Eric Lauer,33,4,Groundout,100.8,-8,16,⚡81.7,83.9,.280,
+30,,George Springer,,Cristopher Sánchez,32,3,Groundout,94.4,-1,41,⚡84.4,94.9,.350,
+31,,Bo Bichette,,Cristopher Sánchez,30,3,Groundout,104.8,-40,3,73.7,93.9,.100,
+32,,Andrés Giménez,,Cristopher Sánchez,29,3,Groundout,85.7,5,85,65.3,84.2,.360,
+33,,Trea Turner,,Eric Lauer,28,3,Lineout,92.3,3,97,66.0,85.6,.440,
+34,,Bryson Stott,,Eric Lauer,27,3,Lineout,82.9,25,288,70.8,85.7,.200,
+35,,Brandon Marsh,,Eric Lauer,26,3,Forceout,73.1,-17,8,74.0,85.1,.060,
+36,,Myles Straw,,Cristopher Sánchez,24,2,Lineout,59.7,35,174,63.8,85.2,.370,
+37,,Davis Schneider,,Cristopher Sánchez,23,2,Single,96.8,-12,10,74.2,95.3,.140,
+38,,Ernie Clement,,Cristopher Sánchez,22,2,Flyout,80.8,36,259,64.0,87.7,.020,
+39,,Max Kepler,,Eric Lauer,20,2,Pop Out,78.1,79,48,73.1,84.3,.000,
+40,,Nick Castellanos,,Bowden Francis,19,2,Flyout,89.0,28,295,62.2,93.1,.060,
+41,,Alec Bohm,,Bowden Francis,18,2,Single,96.1,-1,44,70.4,94.2,.380,
+42,,Kyle Schwarber,,Bowden Francis,17,2,Pop Out,81.8,71,102,74.7,93.7,.000,
+43,,Alejandro Kirk,,Cristopher Sánchez,15,1,Forceout,112.0,-4,26,⚡78.3,94.0,.430,
+44,,Bo Bichette,,Cristopher Sánchez,12,1,Groundout,98.2,-1,39,73.5,93.0,.430,
+45,,Trea Turner,,Bowden Francis,11,1,Flyout,99.0,23,372,72.8,83.3,.390,0/30
+46,,Bryson Stott,,Bowden Francis,10,1,Single,102.6,8,131,70.1,94.1,.720,
+47,,J.T. Realmuto,,Bowden Francis,8,1,Single,103.3,8,162,74.2,93.3,.720,
+48,,Max Kepler,,Bowden Francis,7,1,Single,99.9,,53,67.6,94.3,.430,
+49,,Alec Bohm,,Bowden Francis,5,1,Single,103.1,21,362,74.2,94.6,.540,5/30
+50,,Bryce Harper,,Bowden Francis,3,1,Home Run,104.9,21,394,⚡76.6,82.1,.740,24/30
+51,,Trea Turner,,Bowden Francis,2,1,Home Run,100.3,31,377,70.3,93.2,.510,16/30
+1,,Ceddanne Rafaela,,Reid Detmers,84,10,Pop Out,66.1,70,101,72.6,96.8,.000,
+2,,Jorge Soler,,Zack Kelly,81,10,Pop Out,74.5,61,150,⚡75.4,92.3,.030,
+3,,Taylor Ward,,Zack Kelly,80,10,GIDP,92.9,-3,24,⚡76.0,92.1,.300,
+4,,Nolan Schanuel,,Zack Kelly,78,10,Sac Bunt,25.0,30,41,5.2,91.2,.230,
+5,,Romy Gonzalez,,Kenley Jansen,77,9,Groundout,108.1,-9,17,⚡78.4,95.1,.390,
+6,,Jarren Duran,,Kenley Jansen,74,9,Flyout,93.6,33,346,74.2,93.4,.110,0/30
+7,,Chris Taylor,,Aroldis Chapman,71,9,Groundout,92.4,-17,7,73.6,99.1,.150,
+8,,Jo Adell,,Aroldis Chapman,70,9,Lineout,74.4,13,147,⚡76.8,98.2,.350,
+9,,Connor Wong,,Héctor Neris,69,8,GIDP,97.3,-21,7,⚡78.0,92.4,.140,
+10,,Ceddanne Rafaela,,Héctor Neris,68,8,Flyout,95.2,26,312,72.9,92.3,.240,0/30
+11,,Trevor Story,,Héctor Neris,67,8,Single,107.4,11,237,,92.7,.930,
+12,,Luis Rengifo,,Garrett Whitlock,66,8,Groundout,64.0,-1,32,63.2,84.3,.120,
+13,,Travis d'Arnaud,,Garrett Whitlock,65,8,Single,104.4,20,344,68.1,96.6,.570,0/30
+14,,Jorge Soler,,Garrett Whitlock,64,8,Groundout,87.6,-19,4,71.1,84.9,.090,
+15,,Abraham Toro,,Connor Brogdon,62,7,Pop Out,75.8,74,105,71.6,86.1,.000,
+16,,Mike Trout,,Greg Weissert,59,7,Lineout,97.3,20,314,67.1,95.0,.290,0/30
+17,,Nolan Schanuel,,Greg Weissert,58,7,Groundout,89.0,-6,27,70.8,95.0,.180,
+18,,Zach Neto,,Greg Weissert,57,7,Groundout,71.8,4,59,70.0,93.8,.160,
+19,,Rafael Devers,,Brock Burke,56,6,Flyout,92.0,33,344,74.6,94.1,.060,0/30
+20,,Jarren Duran,,Brock Burke,55,6,Double,95.9,25,361,⚡76.7,96.2,.210,0/30
+21,,Kristian Campbell,,Brock Burke,54,6,GIDP,87.3,-21,9,72.5,93.6,.070,
+22,,Ceddanne Rafaela,,Yusei Kikuchi,52,6,Home Run,112.1,26,426,74.4,89.1,1.000,30/30
+23,,Chris Taylor,,Brayan Bello,50,6,Flyout,98.8,31,369,73.7,85.8,.380,0/30
+24,,Jo Adell,,Brayan Bello,49,6,Pop Out,58.7,36,172,72.6,94.3,.300,
+25,,Travis d'Arnaud,,Brayan Bello,47,6,Single,76.9,22,229,70.4,94.5,.940,
+26,,Abraham Toro,,Yusei Kikuchi,46,5,Pop Out,69.3,64,133,66.2,95.8,.000,
+27,,Romy Gonzalez,,Yusei Kikuchi,45,5,Flyout,105.3,26,392,⚡77.2,89.2,.920,3/30
+28,,Rob Refsnyder,,Yusei Kikuchi,44,5,Single,107.6,4,82,74.1,95.0,.570,
+29,,Rafael Devers,,Yusei Kikuchi,43,5,Flyout,98.6,42,305,72.1,88.9,.060,0/30
+30,,Mike Trout,,Brayan Bello,40,5,Groundout,101.2,-25,4,74.0,95.1,.140,
+31,,Nolan Schanuel,,Brayan Bello,39,5,Fielders Choice,92.1,-15,10,60.1,95.8,.120,
+32,,Zach Neto,,Brayan Bello,38,5,Field Error,64.3,-30,5,70.9,87.0,.050,
+33,,Kristian Campbell,,Yusei Kikuchi,36,4,Flyout,99.1,44,309,73.8,80.0,.050,0/30
+34,,Ceddanne Rafaela,,Yusei Kikuchi,34,4,Single,75.1,16,207,64.8,79.6,.780,
+35,,Trevor Story,,Yusei Kikuchi,33,4,Lineout,104.6,17,321,⚡75.4,94.2,.540,0/30
+36,,Jo Adell,,Brayan Bello,31,4,Single,85.9,1,50,⚡78.4,96.5,.300,
+37,,Luis Rengifo,,Brayan Bello,30,4,Forceout,74.1,-5,15,73.0,84.8,.110,
+38,,Travis d'Arnaud,,Brayan Bello,29,4,Single,105.0,24,336,,84.5,.900,4/30
+39,,Abraham Toro,,Yusei Kikuchi,28,3,Groundout,49.6,-7,17,63.4,96.7,.130,
+40,,Jarren Duran,,Yusei Kikuchi,24,3,Double,101.0,25,369,⚡80.9,88.9,.610,0/30
+41,,Kristian Campbell,,Yusei Kikuchi,23,3,Double,110.2,-18,11,,95.6,.130,
+42,,Connor Wong,,Yusei Kikuchi,22,3,Single,87.3,18,274,73.5,88.0,.850,
+43,,Jorge Soler,,Brayan Bello,21,3,Flyout,82.1,43,248,⚡75.3,85.4,.010,
+44,,Taylor Ward,,Brayan Bello,20,3,Flyout,97.0,38,317,65.9,95.1,.110,0/30
+45,,Mike Trout,,Brayan Bello,19,3,Flyout,86.2,27,275,⚡76.8,97.3,.100,
+46,,Nolan Schanuel,,Brayan Bello,18,3,Single,59.7,-11,11,54.3,91.0,.090,
+47,,Zach Neto,,Brayan Bello,17,3,Single,105.6,-2,39,70.4,84.6,.430,
+48,,Ceddanne Rafaela,,Yusei Kikuchi,14,2,Double,101.4,12,232,73.5,88.9,.950,
+49,,Luis Rengifo,,Brayan Bello,10,2,Groundout,78.4,-64,2,62.6,96.1,.380,
+50,,Travis d'Arnaud,,Brayan Bello,9,2,Groundout,70.1,-12,11,66.5,96.0,.050,
+51,,Jorge Soler,,Brayan Bello,8,2,Groundout,82.9,-41,3,69.9,86.1,.070,
+52,,Rob Refsnyder,,Yusei Kikuchi,7,1,GIDP,106.3,2,56,⚡76.1,96.5,.510,
+53,,Rafael Devers,,Yusei Kikuchi,6,1,Single,111.5,9,208,74.2,93.6,.860,
+54,,Jarren Duran,,Yusei Kikuchi,5,1,Flyout,100.2,42,319,⚡78.6,88.1,.070,0/30
+55,,Taylor Ward,,Brayan Bello,4,1,Double Play,94.7,10,163,74.3,96.6,.710,
+56,,Mike Trout,,Brayan Bello,3,1,Single,100.5,6,111,73.3,95.2,.620,
+57,,Zach Neto,,Brayan Bello,1,1,Groundout,48.1,-78,2,42.4,96.6,.180,
+1,,Jake Bauers,,Emilio Pagán,72,9,Flyout,106.2,26,400,⚡82.7,96.8,.950,6/30
+2,,Caleb Durbin,,Emilio Pagán,71,9,Field Error,89.9,-7,19,70.9,96.7,.230,
+3,,Rhys Hoskins,,Emilio Pagán,69,9,Pop Out,96.4,82,13,73.9,96.9,.010,
+4,,Santiago Espinal,,Grant Anderson,66,8,Lineout,82.4,27,272,64.4,81.5,.140,
+5,,Will Benson,,Grant Anderson,65,8,Home Run,102.6,27,374,68.4,95.6,.830,9/30
+6,,Spencer Steer,,Grant Anderson,64,8,Flyout,93.2,47,282,74.4,81.5,.010,
+7,,Sal Frelick,,Tony Santillan,63,8,Flyout,84.0,36,290,70.2,96.8,.010,
+8,,William Contreras,,Tony Santillan,62,8,Groundout,94.8,-9,14,68.5,87.2,.240,
+9,,Christian Yelich,,Graham Ashcraft,61,8,Lineout,104.6,10,186,⚡76.2,97.2,.870,
+10,,Tyler Stephenson,,Grant Anderson,60,7,Groundout,54.6,-81,2,70.1,82.3,.130,
+11,,Connor Joe,,Rob Zastryzny,58,7,Sac Fly,92.0,22,318,74.5,92.6,.200,0/30
+12,,TJ Friedl,,Rob Zastryzny,57,7,Groundout,64.2,-18,8,73.0,82.5,.050,
+13,,Matt McLain,,Freddy Peralta,56,7,Double,101.2,19,333,69.3,97.6,.360,0/30
+14,,Jackson Chourio,,Graham Ashcraft,54,7,Groundout,57.4,-10,14,70.1,89.6,.090,
+15,,Brice Turang,,Graham Ashcraft,53,7,Groundout,101.7,-10,15,71.3,97.2,.310,
+16,,Santiago Espinal,,Freddy Peralta,51,6,GIDP,94.9,5,91,69.9,95.7,.460,
+17,,Spencer Steer,,Freddy Peralta,49,6,Single,74.0,21,226,70.9,89.5,.990,
+18,,Caleb Durbin,,Scott Barlow,48,6,Flyout,93.6,31,365,⚡78.8,83.7,.180,1/30
+19,,Isaac Collins,,Scott Barlow,47,6,Groundout,79.3,-24,6,67.5,93.9,.050,
+20,,Rhys Hoskins,,Scott Barlow,46,6,Flyout,70.1,36,246,74.7,92.2,.710,
+21,,Tyler Stephenson,,Freddy Peralta,45,5,Flyout,92.7,38,338,70.6,96.5,.030,0/30
+22,,TJ Friedl,,Freddy Peralta,42,5,Single,90.3,11,179,69.7,96.0,.640,
+23,,Matt McLain,,Freddy Peralta,41,5,Pop Out,88.3,77,37,72.4,95.0,.010,
+24,,Jake Fraley,,Freddy Peralta,40,5,Pop Out,63.3,28,196,74.3,94.9,.770,
+25,,Sal Frelick,,Hunter Greene,39,5,Pop Out,79.1,75,60,⚡77.9,100.1,.000,
+26,,Christian Yelich,,Hunter Greene,37,5,Single,108.2,10,179,⚡75.6,100.1,.860,
+27,,Santiago Espinal,,Freddy Peralta,34,4,Groundout,92.5,-10,18,,95.9,.210,
+28,,Spencer Steer,,Freddy Peralta,32,4,Double,100.2,21,320,73.7,84.8,.380,0/30
+29,,Tyler Stephenson,,Freddy Peralta,31,4,Home Run,102.2,26,359,66.1,96.6,.690,22/30
+30,,Elly De La Cruz,,Freddy Peralta,30,4,Double,100.9,29,358,70.7,90.3,.630,3/30
+31,,Rhys Hoskins,,Hunter Greene,25,4,Single,89.9,11,184,,100.0,.640,
+32,,Sal Frelick,,Hunter Greene,24,4,Home Run,103.8,20,357,70.0,90.4,.570,18/30
+33,,William Contreras,,Hunter Greene,23,4,Groundout,105.7,-5,28,⚡79.1,100.4,.360,
+34,,Christian Yelich,,Hunter Greene,22,4,Lineout,90.8,22,317,74.3,90.4,.210,0/30
+35,,TJ Friedl,,Freddy Peralta,21,3,Pop Out,78.4,61,172,67.4,97.5,.010,
+36,,Matt McLain,,Freddy Peralta,20,3,Groundout,92.3,-20,10,71.4,96.7,.150,
+37,,Santiago Espinal,,Freddy Peralta,18,3,Single,83.5,15,221,68.5,97.8,.930,
+38,,Jackson Chourio,,Hunter Greene,17,3,Bunt Groundout,22.3,4,19,2.1,99.4,.330,
+39,,Brice Turang,,Hunter Greene,16,3,Flyout,89.1,27,303,68.0,90.0,.040,0/30
+40,,Caleb Durbin,,Hunter Greene,11,2,Pop Out,69.1,67,116,73.5,92.0,.000,
+41,,Isaac Collins,,Hunter Greene,10,2,Flyout,93.0,29,353,70.7,100.2,.120,0/30
+42,,TJ Friedl,,Freddy Peralta,6,1,Groundout,81.9,1,45,68.7,81.0,.240,
+43,,Christian Yelich,,Hunter Greene,3,1,Single,95.7,14,248,73.9,99.5,.900,
+44,,Jackson Chourio,,Hunter Greene,2,1,Lineout,86.3,20,297,74.5,89.3,.620,
+45,,Brice Turang,,Hunter Greene,1,1,Double,101.7,20,305,70.3,91.3,.500,0/30
+1,,Sean Murphy,,Ryan Thompson,75,9,Groundout,56.2,-18,9,74.9,90.1,.070,
+2,,Alex Verdugo,,Ryan Thompson,74,9,Groundout,59.9,-64,3,,89.6,.260,
+3,,Ozzie Albies,,Ryan Thompson,73,9,Groundout,86.3,3,58,73.3,91.3,.350,
+4,,Geraldo Perdomo,,Scott Blewett,72,9,Groundout,94.2,-6,22,⚡76.0,84.6,.190,
+5,,Ketel Marte,,Rafael Montero,71,9,Single,92.7,18,291,⚡76.2,89.4,.530,
+6,,Corbin Carroll,,Rafael Montero,70,9,Home Run,107.4,29,416,⚡75.5,88.4,.950,30/30
+7,,Alek Thomas,,Rafael Montero,69,9,Single,103.6,13,269,70.6,94.8,.900,
+8,,Gabriel Moreno,,Rafael Montero,68,9,Single,70.0,23,204,67.9,96.0,.980,
+9,,Pavin Smith,,Rafael Montero,67,9,Flyout,93.2,33,325,71.2,87.8,.060,0/30
+10,,Marcell Ozuna,,Shelby Miller,65,8,Flyout,106.1,22,403,⚡75.6,95.6,.840,7/30
+11,,Austin Riley,,Shelby Miller,63,8,Single,103.3,,49,⚡75.9,86.6,.460,
+12,,Drake Baldwin,,Shelby Miller,62,8,Forceout,70.7,-25,5,⚡78.6,87.4,.050,
+13,,Ronald Acuña Jr.,,Shelby Miller,61,8,Single,105.1,-6,15,74.8,87.4,.410,
+14,,Eugenio Suárez,,Rafael Montero,60,8,Flyout,99.7,63,190,⚡77.1,94.6,.010,
+15,,Josh Naylor,,Rafael Montero,59,8,Groundout,76.8,-8,16,70.5,86.8,.070,
+16,,Geraldo Perdomo,,Rafael Montero,58,8,Flyout,79.3,55,194,61.1,86.7,.050,
+17,,Michael Harris II,,Zac Gallen,57,7,Bunt Groundout,28.8,-74,2,9.0,85.7,.230,
+18,,Alex Verdugo,,Zac Gallen,55,7,Groundout,97.1,-16,9,66.6,85.9,.180,
+19,,Ozzie Albies,,Zac Gallen,50,6,Flyout,73.6,57,193,61.0,93.8,.070,
+20,,Marcell Ozuna,,Zac Gallen,49,6,Flyout,93.5,51,260,⚡77.2,94.8,.010,
+21,,Austin Riley,,Zac Gallen,47,6,Groundout,65.0,-37,5,61.4,83.0,.080,
+22,,Pavin Smith,,Enyel De Los Santos,45,6,Flyout,79.3,50,229,71.5,88.8,.040,
+23,,Lourdes Gurriel Jr.,,Enyel De Los Santos,44,6,Single,86.6,11,175,67.5,97.0,.620,
+24,,Eugenio Suárez,,Enyel De Los Santos,43,6,Lineout,105.9,16,284,73.9,95.9,.590,
+25,,Drake Baldwin,,Zac Gallen,42,5,Groundout,81.6,-5,20,⚡76.3,85.3,.160,
+26,,Ronald Acuña Jr.,,Zac Gallen,41,5,Single,103.7,14,268,⚡76.1,94.2,.740,
+27,,Michael Harris II,,Zac Gallen,40,5,Groundout,100.3,-18,8,⚡75.2,94.0,.170,
+28,,Josh Naylor,,Spencer Strider,38,5,Groundout,80.4,-27,6,,96.4,.040,
+29,,Geraldo Perdomo,,Spencer Strider,37,5,GIDP,100.2,-1,41,73.1,94.6,.350,
+30,,Corbin Carroll,,Spencer Strider,35,5,Home Run,106.1,29,438,⚡77.9,95.2,1.000,30/30
+31,,Alex Verdugo,,Zac Gallen,34,4,Lineout,91.0,26,339,62.4,94.0,.090,0/30
+32,,Ozzie Albies,,Zac Gallen,33,4,Single,86.2,19,276,65.5,95.8,.780,
+33,,Marcell Ozuna,,Zac Gallen,32,4,Field Error,66.7,-23,6,71.9,82.1,.050,
+34,,Matt Olson,,Zac Gallen,31,4,Single,96.2,-1,27,65.2,88.1,.350,
+35,,Austin Riley,,Zac Gallen,30,4,Groundout,102.5,1,62,71.0,82.0,.460,
+36,,Drake Baldwin,,Zac Gallen,29,4,Home Run,104.0,23,378,73.3,91.0,.780,28/30
+37,,Alek Thomas,,Spencer Strider,27,4,Groundout,77.4,-42,4,⚡75.2,94.5,.120,
+38,,Lourdes Gurriel Jr.,,Spencer Strider,24,4,Groundout,76.9,-3,23,63.4,81.9,.090,
+39,,Michael Harris II,,Zac Gallen,23,3,Groundout,106.1,-7,21,71.3,82.6,.400,
+40,,Alex Verdugo,,Zac Gallen,21,3,Groundout,80.2,-14,9,57.3,88.2,.050,
+41,,Eugenio Suárez,,Spencer Strider,20,3,Flyout,94.8,51,272,72.5,79.1,.000,
+42,,Josh Naylor,,Spencer Strider,19,3,Groundout,87.4,-7,21,67.4,95.6,.150,
+43,,Ketel Marte,,Spencer Strider,17,3,Home Run,113.2,19,371,74.7,94.6,.920,21/30
+44,,Corbin Carroll,,Spencer Strider,16,3,Single,99.8,-8,14,⚡78.4,95.3,.320,
+45,,Ozzie Albies,,Zac Gallen,15,2,Groundout,77.0,-25,5,72.0,83.5,.050,
+46,,Marcell Ozuna,,Zac Gallen,14,2,Groundout,63.1,-27,7,67.4,94.4,.070,
+47,,Matt Olson,,Zac Gallen,13,2,Groundout,55.1,-6,17,68.3,91.4,.090,
+48,,Alek Thomas,,Spencer Strider,12,2,Flyout,101.7,35,391,72.7,96.2,.430,3/30
+49,,Gabriel Moreno,,Spencer Strider,11,2,Single,60.4,37,183,62.7,95.2,.330,
+50,,Pavin Smith,,Spencer Strider,10,2,Flyout,97.6,33,373,71.8,95.0,.240,0/30
+51,,Eugenio Suárez,,Spencer Strider,8,2,Double,110.1,21,373,⚡75.4,96.0,.960,0/30
+52,,Austin Riley,,Zac Gallen,7,1,Groundout,83.3,-42,6,61.6,93.9,.080,
+53,,Drake Baldwin,,Zac Gallen,6,1,Groundout,89.3,-27,7,⚡80.4,88.1,.050,
+54,,Ronald Acuña Jr.,,Zac Gallen,5,1,Flyout,98.4,37,353,73.0,93.8,.170,7/30
+55,,Geraldo Perdomo,,Spencer Strider,3,1,Flyout,95.0,45,315,71.6,95.8,.010,0/30
+56,,Ketel Marte,,Spencer Strider,2,1,Home Run,109.3,30,445,71.7,86.4,1.000,30/30
+57,,Corbin Carroll,,Spencer Strider,1,1,Pop Out,84.5,67,130,⚡78.2,95.9,.010,
+1,,Adolis García,,Pete Fairbanks,66,9,Groundout,103.2,-11,6,72.6,98.4,.290,
+2,,Josh Jung,,Pete Fairbanks,65,9,Lineout,98.9,21,326,67.3,95.6,.330,0/30
+3,,Corey Seager,,Pete Fairbanks,64,9,Groundout,99.2,-9,15,⚡77.3,93.0,.270,
+4,,Jake Mangum,,Codi Heuer,62,8,Groundout,87.7,-34,4,67.7,86.6,.080,
+5,,Junior Caminero,,Codi Heuer,61,8,Home Run,103.4,30,398,72.7,95.0,.750,27/30
+6,,Jonathan Aranda,,Codi Heuer,60,8,Groundout,83.3,-32,4,70.2,88.2,.050,
+7,,Wyatt Langford,,Kevin Kelly,59,8,Groundout,97.8,-9,12,73.8,90.7,.320,
+8,,Josh Smith,,Kevin Kelly,58,8,Lineout,90.5,26,329,63.8,91.6,.090,0/30
+9,,Kyle Higashioka,,Kevin Kelly,57,8,Flyout,82.6,42,254,73.8,89.9,.000,
+10,,Yandy Díaz,,Codi Heuer,56,7,Forceout,90.5,-12,11,⚡76.4,96.4,.160,
+11,,Brandon Lowe,,Jacob Latz,55,7,Single,97.4,-4,29,70.3,83.4,.280,
+12,,Josh Lowe,,Jacob Latz,54,7,Flyout,86.0,41,284,69.2,81.5,.010,
+13,,Jake Burger,,Garrett Cleavinger,51,7,Single,84.8,18,229,⚡80.0,89.3,.940,
+14,,Adolis García,,Garrett Cleavinger,49,7,Single,106.0,12,231,70.9,95.9,.910,
+15,,Josh Jung,,Garrett Cleavinger,48,7,Flyout,94.1,34,333,73.4,87.5,.060,0/30
+16,,Jake Mangum,,Jacob Latz,44,6,Single,43.1,-39,5,72.2,84.0,.310,
+17,,Jonathan Aranda,,Tyler Mahle,42,6,Single,108.1,8,133,⚡75.4,85.7,.710,
+18,,Brandon Lowe,,Tyler Mahle,40,6,Groundout,83.7,8,106,⚡79.2,82.1,.430,
+19,,Josh Smith,,Mason Montgomery,38,6,Forceout,73.8,1,42,⚡75.1,89.3,.110,
+20,,Kyle Higashioka,,Mason Montgomery,37,6,Single,90.7,9,127,74.8,89.7,.540,
+21,,Josh Lowe,,Tyler Mahle,35,5,Lineout,95.0,20,318,⚡75.1,83.7,.310,0/30
+22,,Taylor Walls,,Tyler Mahle,34,5,Groundout,74.4,-17,9,48.4,90.6,.070,
+23,,Jake Burger,,Drew Rasmussen,32,5,Groundout,79.3,-40,3,67.9,94.5,.090,
+24,,Alejandro Osuna,,Drew Rasmussen,30,5,Groundout,99.9,-12,13,70.5,95.4,.220,
+25,,Kameron Misner,,Tyler Mahle,29,4,Groundout,61.0,-7,13,57.9,84.7,.080,
+26,,Junior Caminero,,Tyler Mahle,27,4,Flyout,96.0,38,322,73.7,92.0,.070,0/30
+27,,Jonathan Aranda,,Tyler Mahle,23,3,Forceout,88.2,-17,12,61.4,91.6,.080,
+28,,Yandy Díaz,,Tyler Mahle,22,3,Single,107.9,1,60,⚡79.0,83.7,.480,
+29,,Josh Lowe,,Tyler Mahle,20,3,Bunt Pop Out,44.8,67,73,,81.4,.020,
+30,,Kyle Higashioka,,Drew Rasmussen,18,3,Groundout,94.8,-30,3,72.2,91.9,.060,
+31,,Evan Carter,,Drew Rasmussen,17,3,Forceout,86.4,-10,17,60.8,94.6,.150,
+32,,Jake Burger,,Drew Rasmussen,16,3,Single,76.1,-2,31,70.9,89.9,.100,
+33,,Danny Jansen,,Tyler Mahle,14,2,Pop Out,64.5,52,176,58.8,91.9,.090,
+34,,Kameron Misner,,Tyler Mahle,13,2,Home Run,88.9,37,328,67.0,91.7,.030,2/30
+35,,Jake Mangum,,Tyler Mahle,12,2,Lineout,81.9,23,272,72.1,82.3,.520,
+36,,Marcus Semien,,Drew Rasmussen,11,2,Groundout,101.4,,52,73.4,95.8,.410,
+37,,Josh Jung,,Drew Rasmussen,9,2,Groundout,40.9,-43,5,65.9,95.6,.280,
+38,,Junior Caminero,,Tyler Mahle,8,1,Lineout,75.1,29,252,⚡85.9,86.7,.450,
+39,,Jonathan Aranda,,Tyler Mahle,7,1,Single,96.7,12,186,66.8,85.9,.970,
+40,,Yandy Díaz,,Tyler Mahle,6,1,Single,108.3,-10,13,⚡75.5,86.4,.350,
+41,,Josh Lowe,,Tyler Mahle,4,1,Groundout,96.2,-1,35,70.6,83.0,.430,
+42,,Wyatt Langford,,Drew Rasmussen,2,1,Lineout,97.0,15,264,66.6,90.9,.800,
+1,,Parker Meadows,,Dan Altavilla,76,9,Pop Out,89.1,76,116,73.7,95.3,.010,
+2,,Javier Báez,,Dan Altavilla,75,9,Groundout,110.0,-6,15,⚡79.4,87.0,.450,
+3,,Miguel Vargas,,Chase Lee,73,8,GIDP,95.4,-6,12,69.3,86.5,.280,
+4,,Chase Meidroth,,Chase Lee,72,8,Single,91.9,13,226,69.8,79.8,.940,
+5,,Mike Tauchman,,Chase Lee,71,8,Single,102.8,-2,39,66.0,88.3,.400,
+6,,Vinny Capra,,Chase Lee,70,8,Single,80.0,3,73,61.4,88.1,.250,
+7,,Edgar Quero,,Chase Lee,68,8,Groundout,107.8,-21,4,,89.1,.110,
+8,,Dillon Dingler,,Brandon Eisert,67,8,Lineout,101.1,19,323,,90.4,.360,0/30
+9,,Spencer Torkelson,,Brandon Eisert,65,8,Single,83.4,-7,17,71.1,84.7,.140,
+10,,Riley Greene,,Brandon Eisert,64,8,Flyout,92.2,28,292,70.9,87.0,.100,
+11,,Zach McKinstry,,Brandon Eisert,63,8,Single,95.9,9,154,66.8,85.7,.610,
+12,,Austin Slater,,Dylan Smith,60,7,Double,106.1,18,336,68.5,95.6,.590,0/30
+13,,Andrew Benintendi,,Dylan Smith,59,7,Single,99.2,-9,15,,95.5,.300,
+14,,Miguel Vargas,,Dylan Smith,58,7,Single,104.1,9,217,71.1,95.9,.760,
+15,,Mike Tauchman,,Dylan Smith,56,7,Flyout,87.9,48,278,71.6,95.1,.010,
+16,,Parker Meadows,,Jordan Leasure,55,7,Flyout,100.0,27,368,74.2,96.1,.560,0/30
+17,,Javier Báez,,Jordan Leasure,54,7,Pop Out,69.5,73,84,⚡79.9,87.4,.000,
+18,,Trey Sweeney,,Jordan Leasure,53,7,Flyout,91.6,49,270,⚡76.7,96.4,.000,
+19,,Dillon Dingler,,Jordan Leasure,52,7,Double,86.7,10,129,70.8,87.5,.530,
+20,,Wenceel Pérez,,Jordan Leasure,51,7,Single,93.8,-5,21,66.8,87.8,.290,
+21,,Vinny Capra,,Tyler Holton,50,6,Groundout,50.7,17,83,⚡76.1,85.3,.180,
+22,,Michael A. Taylor,,Tyler Holton,49,6,Home Run,102.8,33,396,⚡78.8,85.3,.560,25/30
+23,,Edgar Quero,,Tyler Holton,48,6,Single,89.7,-12,11,66.6,79.3,.090,
+24,,Josh Rojas,,Tyler Holton,47,6,Lineout,90.2,24,281,64.5,92.1,.130,
+25,,Austin Slater,,Tyler Holton,46,6,Single,97.7,-15,7,72.3,84.0,.260,
+26,,Andrew Benintendi,,Tyler Holton,45,6,Groundout,64.7,-4,23,,81.3,.080,
+27,,Gleyber Torres,,Shane Smith,41,6,Flyout,80.2,50,211,69.5,91.4,.050,
+28,,Chase Meidroth,,Brenan Hanifee,39,5,Flyout,92.3,29,302,67.8,95.5,.110,0/30
+29,,Mike Tauchman,,Brenan Hanifee,38,5,Pop Out,97.8,61,103,73.1,93.0,.020,
+30,,Parker Meadows,,Shane Smith,37,5,Groundout,102.9,1,63,67.3,81.6,.470,
+31,,Javier Báez,,Shane Smith,36,5,Groundout,75.9,-41,4,61.7,91.0,.090,
+32,,Austin Slater,,Brenan Hanifee,30,4,Fielders Choice,94.0,-8,18,66.6,93.6,.240,
+33,,Miguel Vargas,,Brant Hurter,28,4,Single,95.2,6,130,⚡75.1,92.5,.490,
+34,,Wenceel Pérez,,Shane Smith,26,4,Flyout,87.2,29,333,69.9,96.2,.040,0/30
+35,,Spencer Torkelson,,Shane Smith,25,4,Flyout,101.2,61,212,71.6,92.1,.020,
+36,,Riley Greene,,Shane Smith,24,4,Single,64.6,-56,1,38.1,96.8,.310,
+37,,Chase Meidroth,,Brant Hurter,23,3,Lineout,87.0,23,321,68.3,91.1,.210,0/30
+38,,Javier Báez,,Shane Smith,16,3,Single,79.9,15,201,74.1,97.3,.830,
+39,,Trey Sweeney,,Shane Smith,15,3,Groundout,77.0,-26,4,61.5,81.7,.040,
+40,,Josh Rojas,,Brant Hurter,13,2,Groundout,101.8,-23,4,,91.6,.130,
+41,,Wenceel Pérez,,Shane Smith,10,2,Lineout,100.2,18,286,72.8,91.6,.410,
+42,,Riley Greene,,Shane Smith,8,2,Single,80.3,23,243,72.5,91.5,.650,
+43,,Chase Meidroth,,Beau Brieske,5,1,Flyout,91.9,45,282,72.1,95.9,.010,
+44,,Mike Tauchman,,Beau Brieske,4,1,Groundout,95.0,-21,5,68.1,96.9,.150,
+45,,Kerry Carpenter,,Shane Smith,3,1,Lineout,75.0,15,162,72.6,97.5,.660,
+46,,Gleyber Torres,,Shane Smith,2,1,GIDP,103.2,-1,42,74.2,97.0,.450,
+1,,Nolan Arenado,,Carlos Estévez,84,9,Flyout,83.3,55,213,73.6,96.2,.020,
+2,,Iván Herrera,,Carlos Estévez,83,9,Single,101.6,-1,50,⚡79.4,96.2,.470,
+3,,Jac Caglianone,,Matt Svanson,81,9,Groundout,113.9,-10,13,⚡81.4,91.9,.370,
+4,,Salvador Perez,,Matt Svanson,80,9,Lineout,87.4,27,326,72.4,85.1,.070,0/30
+5,,Vinnie Pasquantino,,Matt Svanson,79,9,Single,77.3,25,242,69.1,86.4,.660,
+6,,Maikel Garcia,,Matt Svanson,78,9,Flyout,79.0,34,276,72.2,85.2,.040,
+7,,Brendan Donovan,,Taylor Clarke,77,8,Groundout,90.1,-10,14,68.1,96.0,.160,
+8,,Masyn Winn,,Taylor Clarke,76,8,Flyout,81.0,41,274,72.8,86.7,.020,
+9,,Lars Nootbaar,,Taylor Clarke,75,8,Lineout,94.2,20,309,,95.8,.310,0/30
+10,,Bobby Witt Jr.,,Matt Svanson,74,8,Flyout,94.9,26,344,71.3,98.1,.240,0/30
+11,,Jonathan India,,Matt Svanson,73,8,Groundout,60.1,-16,10,68.8,97.4,.060,
+12,,Kyle Isbel,,John King,72,8,Sac Bunt,31.3,-18,9,13.1,83.3,.360,
+13,,Nolan Gorman,,John Schreiber,69,7,Single,64.8,42,212,73.6,94.4,.400,
+14,,Alec Burleson,,John Schreiber,68,7,Single,74.5,,40,65.6,93.8,.120,
+15,,Nolan Arenado,,John Schreiber,67,7,Groundout,47.2,-50,3,67.9,83.0,.190,
+16,,Iván Herrera,,John Schreiber,66,7,Pop Out,92.0,63,174,⚡80.4,93.2,.010,
+17,,Nick Loftin,,John King,65,7,Flyout,91.4,39,326,67.4,84.9,.010,0/30
+18,,Jac Caglianone,,John King,64,7,Groundout,65.3,10,101,⚡76.0,92.7,.190,
+19,,Willson Contreras,,John Schreiber,62,6,Lineout,87.0,22,300,72.1,83.1,.330,0/30
+20,,Brendan Donovan,,Angel Zerpa,61,6,Groundout,100.9,-17,6,66.0,97.6,.200,
+21,,Masyn Winn,,Angel Zerpa,60,6,Double,104.8,9,174,⚡76.3,96.4,.730,
+22,,Victor Scott II,,Angel Zerpa,58,6,Groundout,93.6,,53,64.9,97.7,.430,
+23,,Vinnie Pasquantino,,Kyle Leahy,57,6,Groundout,72.9,-20,9,62.6,91.2,.040,
+24,,Maikel Garcia,,Kyle Leahy,56,6,Single,106.6,-20,8,70.0,95.7,.180,
+25,,Jonathan India,,Kyle Leahy,54,6,Single,86.2,12,181,⚡76.9,92.6,.670,
+26,,Kyle Isbel,,Steven Matz,53,6,Single,104.3,-6,20,66.5,95.3,.360,
+27,,Alec Burleson,,Steven Cruz,49,5,Flyout,94.6,31,332,72.4,93.5,.140,0/30
+28,,Nolan Arenado,,Steven Cruz,48,5,Pop Out,85.2,63,165,72.8,96.0,.010,
+29,,Jac Caglianone,,Steven Matz,47,5,Groundout,96.9,-24,8,⚡84.0,78.7,.090,
+30,,Salvador Perez,,Steven Matz,46,5,Single,95.3,17,241,67.4,93.9,.560,
+31,,Vinnie Pasquantino,,Steven Matz,45,5,Double,109.0,12,283,⚡75.1,93.4,.890,
+32,,Maikel Garcia,,Steven Matz,44,5,Flyout,90.2,32,337,74.6,93.9,.030,1/30
+33,,Bobby Witt Jr.,,Andre Pallante,43,5,Single,104.9,3,103,71.9,96.3,.560,
+34,,Jonathan India,,Andre Pallante,42,5,Single,91.7,16,258,74.8,94.4,.870,
+35,,Kyle Isbel,,Andre Pallante,41,5,Single,106.4,-3,31,,94.3,.430,
+36,,Drew Waters,,Andre Pallante,40,5,Single,88.6,2,52,71.8,95.4,.280,
+37,,Nick Loftin,,Andre Pallante,39,5,Home Run,100.5,26,385,68.5,87.4,.520,30/30
+38,,Jac Caglianone,,Andre Pallante,38,5,Groundout,112.1,-8,19,⚡75.0,95.5,.420,
+39,,Iván Herrera,,Steven Cruz,37,4,Groundout,89.5,-17,7,72.9,90.3,.100,
+40,,Lars Nootbaar,,Daniel Lynch IV,33,4,Single,101.1,4,107,68.9,86.1,.540,
+41,,Salvador Perez,,Andre Pallante,32,4,Flyout,87.3,42,299,⚡76.1,96.5,.000,
+42,,Vinnie Pasquantino,,Andre Pallante,31,4,Pop Out,81.9,76,74,⚡82.3,87.6,.010,
+43,,Victor Scott II,,Daniel Lynch IV,29,3,Groundout,66.5,-14,13,71.0,86.9,.080,
+44,,Alec Burleson,,Michael Lorenzen,27,3,Home Run,106.8,26,428,⚡76.0,80.6,.970,29/30
+45,,Nolan Arenado,,Michael Lorenzen,26,3,Single,83.5,-2,26,70.6,84.4,.140,
+46,,Willson Contreras,,Michael Lorenzen,24,3,Double,95.5,18,247,⚡83.0,93.1,.460,
+47,,Masyn Winn,,Michael Lorenzen,22,3,Single,109.8,9,223,⚡76.2,94.0,.810,
+48,,Lars Nootbaar,,Michael Lorenzen,21,3,Flyout,88.0,27,325,⚡79.4,94.0,.050,0/30
+49,,Jonathan India,,Andre Pallante,19,3,Groundout,80.0,3,65,73.8,87.1,.230,
+50,,Kyle Isbel,,Andre Pallante,18,3,Groundout,102.9,-24,4,⚡76.5,89.0,.170,
+51,,Victor Scott II,,Michael Lorenzen,17,2,Groundout,68.0,-14,10,71.0,86.1,.070,
+52,,Nolan Gorman,,Michael Lorenzen,16,2,Home Run,105.7,32,403,74.8,93.8,.880,18/30
+53,,Alec Burleson,,Michael Lorenzen,15,2,Single,104.9,3,91,⚡78.6,83.3,.560,
+54,,Nolan Arenado,,Michael Lorenzen,14,2,Groundout,60.7,,34,69.1,83.8,.080,
+55,,Iván Herrera,,Michael Lorenzen,13,2,Groundout,82.8,,45,70.0,95.1,.220,
+56,,Drew Waters,,Andre Pallante,12,2,Groundout,94.7,-26,3,72.9,89.1,.120,
+57,,Nick Loftin,,Andre Pallante,11,2,Groundout,95.1,3,78,68.9,95.6,.470,
+58,,Jac Caglianone,,Andre Pallante,10,2,Lineout,98.4,23,392,⚡81.0,78.5,.330,0/30
+59,,Brendan Donovan,,Michael Lorenzen,8,1,Double,87.8,16,223,72.9,85.5,.970,
+60,,Masyn Winn,,Michael Lorenzen,7,1,Groundout,82.9,-20,8,68.1,94.6,.070,
+61,,Lars Nootbaar,,Michael Lorenzen,6,1,Lineout,100.0,20,364,⚡77.7,83.6,.360,0/30
+62,,Salvador Perez,,Andre Pallante,5,1,Groundout,48.2,,30,67.5,95.1,.120,
+63,,Vinnie Pasquantino,,Andre Pallante,4,1,Groundout,72.3,-58,2,67.3,95.8,.240,
+64,,Maikel Garcia,,Andre Pallante,3,1,Groundout,102.5,-28,5,70.0,89.5,.170,
+65,,Bobby Witt Jr.,,Andre Pallante,2,1,Home Run,106.9,26,428,⚡79.5,94.7,.970,30/30
+66,,Jonathan India,,Andre Pallante,1,1,Single,80.0,15,181,74.4,88.8,.830,
+1,,Randy Arozarena,,Félix Bautista,71,9,Lineout,99.0,22,368,70.2,97.3,.350,0/30
+2,,Cal Raleigh,,Félix Bautista,70,9,Groundout,82.1,1,43,⚡77.7,97.2,.220,
+3,,Gunnar Henderson,,Collin Snider,69,9,GIDP,77.9,-6,21,⚡81.6,81.9,.130,
+4,,Adley Rutschman,,Collin Snider,68,9,Single,90.2,1,58,⚡79.8,91.4,.280,
+5,,Jackson Holliday,,Collin Snider,67,9,Single,96.7,13,250,73.1,93.1,.970,
+6,,Dylan Carlson,,Collin Snider,66,9,Flyout,103.3,32,369,70.5,93.5,.670,0/30
+7,,Heston Kjerstad,,Collin Snider,65,9,Double,102.3,20,336,67.0,85.5,.500,0/30
+8,,Coby Mayo,,Collin Snider,64,9,Single,97.2,14,257,74.2,85.5,.890,
+9,,Jorge Polanco,,Bryan Baker,62,8,Pop Out,61.7,63,134,61.2,85.3,.000,
+10,,J.P. Crawford,,Bryan Baker,61,8,Single,99.2,6,111,69.3,85.0,.600,
+11,,Miles Mastrobuoni,,Bryan Baker,60,8,Single,101.9,8,138,,96.5,.690,
+12,,Colton Cowser,,Jackson Kowar,58,8,Groundout,103.1,-1,50,70.3,96.7,.450,
+13,,Ryan O'Hearn,,Jackson Kowar,56,8,Flyout,99.9,38,361,73.5,97.5,.210,0/30
+14,,Rowdy Tellez,,Tomoyuki Sugano,54,7,Groundout,101.5,1,58,⚡83.8,88.4,.490,
+15,,Gunnar Henderson,,Jackson Kowar,52,7,Flyout,97.9,49,289,⚡77.4,96.6,.010,
+16,,Adley Rutschman,,Jackson Kowar,51,7,Groundout,106.6,5,109,71.2,97.2,.610,
+17,,Jackson Holliday,,Jackson Kowar,50,7,Flyout,99.6,50,271,⚡75.3,84.4,.010,
+18,,Cal Raleigh,,Tomoyuki Sugano,49,6,GIDP,88.3,7,98,⚡75.5,88.0,.460,
+19,,Jorge Polanco,,Tomoyuki Sugano,47,6,Single,72.4,9,106,70.9,87.6,.250,
+20,,J.P. Crawford,,Tomoyuki Sugano,46,6,Single,72.0,12,139,69.7,88.8,.350,
+21,,Dylan Carlson,,Eduard Bazardo,45,6,GIDP,89.8,-2,33,66.2,81.7,.290,
+22,,Coby Mayo,,Eduard Bazardo,43,6,Pop Out,74.7,70,124,74.5,81.5,.000,
+23,,Colton Cowser,,Eduard Bazardo,42,6,Home Run,101.4,28,374,74.8,94.8,.630,15/30
+24,,Ben Williamson,,Tomoyuki Sugano,41,5,Lineout,77.5,12,151,71.9,83.1,.350,
+25,,Cole Young,,Tomoyuki Sugano,40,5,Groundout,80.1,-13,7,66.5,88.7,.070,
+26,,Leody Taveras,,Tomoyuki Sugano,39,5,Lineout,100.5,21,345,71.5,92.1,.420,0/30
+27,,Ramón Urías,,George Kirby,38,5,Lineout,102.7,6,111,68.4,95.6,.650,
+28,,Ryan O'Hearn,,George Kirby,37,5,Single,96.8,9,138,67.0,96.3,.560,
+29,,Gunnar Henderson,,George Kirby,36,5,Single,104.3,-5,17,⚡80.1,84.7,.400,
+30,,Adley Rutschman,,George Kirby,35,5,Single,97.1,-17,7,70.4,87.3,.140,
+31,,Dylan Carlson,,George Kirby,33,5,Flyout,87.5,46,263,66.3,95.5,.000,
+32,,Rowdy Tellez,,Tomoyuki Sugano,32,4,Groundout,86.8,-25,5,73.4,88.5,.070,
+33,,Cal Raleigh,,Tomoyuki Sugano,30,4,Flyout,90.6,23,328,70.2,88.4,.180,0/30
+34,,Julio Rodríguez,,Tomoyuki Sugano,29,4,Single,75.9,-48,3,⚡75.5,93.0,.190,
+35,,Heston Kjerstad,,George Kirby,28,4,Lineout,81.2,29,266,72.3,96.2,.100,
+36,,Coby Mayo,,George Kirby,27,4,Flyout,98.8,43,311,74.3,96.6,.050,0/30
+37,,Colton Cowser,,George Kirby,26,4,Groundout,94.2,-15,14,73.7,96.1,.160,
+38,,Jorge Polanco,,Tomoyuki Sugano,25,3,GIDP,95.9,1,51,73.8,87.7,.390,
+39,,J.P. Crawford,,Tomoyuki Sugano,24,3,Single,87.2,18,249,69.8,79.7,.850,
+40,,Ben Williamson,,Tomoyuki Sugano,23,3,Flyout,86.5,37,287,74.1,84.7,.010,
+41,,Ramón Urías,,George Kirby,22,3,GIDP,102.1,-24,6,70.1,95.4,.130,
+42,,Gunnar Henderson,,George Kirby,20,3,Groundout,97.4,-17,11,⚡78.7,96.3,.170,
+43,,Cole Young,,Tomoyuki Sugano,19,2,Groundout,66.6,-42,4,⚡78.9,86.7,.150,
+44,,Rowdy Tellez,,Tomoyuki Sugano,17,2,Home Run,108.6,26,404,⚡78.0,79.4,.980,30/30
+45,,Randy Arozarena,,Tomoyuki Sugano,16,2,Groundout,107.0,7,129,69.3,93.5,.650,
+46,,Dylan Carlson,,George Kirby,12,2,Single,89.6,7,154,64.4,97.7,.450,
+47,,Heston Kjerstad,,George Kirby,11,2,Single,79.0,17,210,64.8,96.7,.970,
+48,,Coby Mayo,,George Kirby,10,2,Groundout,53.6,-17,11,68.4,96.2,.090,
+49,,Julio Rodríguez,,Tomoyuki Sugano,9,1,Groundout,89.8,4,78,72.9,82.2,.390,
+50,,Jorge Polanco,,Tomoyuki Sugano,8,1,Groundout,98.0,7,117,73.4,77.5,.600,
+51,,J.P. Crawford,,Tomoyuki Sugano,7,1,Lineout,97.3,17,342,71.7,86.6,.530,0/30
+52,,Colton Cowser,,George Kirby,6,1,Flyout,101.8,49,284,⚡80.2,96.0,.020,
+53,,Ramón Urías,,George Kirby,5,1,Sac Fly,77.4,34,254,68.9,96.7,.120,
+54,,Ryan O'Hearn,,George Kirby,4,1,Single,86.0,8,110,74.5,87.5,.430,
+55,,Gunnar Henderson,,George Kirby,3,1,Single,72.0,4,61,⚡76.7,87.2,.180,
+56,,Adley Rutschman,,George Kirby,2,1,Single,84.7,10,183,64.1,85.1,.480,
+57,,Jackson Holliday,,George Kirby,1,1,Groundout,104.7,-2,37,73.5,84.7,.430,
+1,,Jung Hoo Lee,,Jeremiah Estrada,83,10,Groundout,82.8,9,138,62.8,97.7,.410,
+2,,Heliot Ramos,,Jeremiah Estrada,82,10,Groundout,87.1,3,64,⚡79.0,87.6,.430,
+3,,Casey Schmitt,,Jeremiah Estrada,81,10,Sac Bunt,33.7,-61,1,,95.6,.260,
+4,,Elias Díaz,,Spencer Bivens,80,10,Groundout,93.6,-20,8,70.3,77.5,.110,
+5,,Brandon Lockridge,,Spencer Bivens,79,10,Single,50.2,-36,4,55.5,93.7,.210,
+6,,Jake Cronenworth,,Spencer Bivens,78,10,Single,85.7,9,109,70.4,92.0,.460,
+7,,Xander Bogaerts,,Spencer Bivens,77,10,Groundout,90.7,-11,17,73.4,95.3,.170,
+8,,Gavin Sheets,,Spencer Bivens,76,10,Pop Out,59.4,62,113,59.7,79.4,.000,
+9,,Patrick Bailey,,Yuki Matsui,75,9,Flyout,78.8,40,255,⚡77.2,94.0,.040,
+10,,Tyler Fitzgerald,,Yuki Matsui,74,9,Lineout,91.0,22,290,68.0,84.2,.210,
+11,,Mike Yastrzemski,,Yuki Matsui,73,9,Flyout,86.0,54,231,⚡76.6,92.1,.020,
+12,,Manny Machado,,Camilo Doval,71,9,Single,77.3,20,226,70.5,90.7,.980,
+13,,Brandon Lockridge,,Camilo Doval,67,9,Single,94.9,5,95,⚡76.4,89.3,.460,
+14,,Jake Cronenworth,,Camilo Doval,66,9,Groundout,88.8,-22,6,70.4,98.8,.130,
+15,,Willy Adames,,Sean Reynolds,65,8,Groundout,83.9,3,63,66.0,96.4,.330,
+16,,Matt Chapman,,Sean Reynolds,64,8,Flyout,93.8,31,310,⚡77.8,94.5,.180,0/30
+17,,Wilmer Flores,,Sean Reynolds,63,8,Groundout,100.4,-16,6,69.0,92.6,.130,
+18,,Xander Bogaerts,,Tyler Rogers,62,8,Groundout,71.2,-13,12,62.5,84.7,.050,
+19,,Gavin Sheets,,Tyler Rogers,61,8,GIDP,99.1,-19,5,70.2,83.7,.150,
+20,,Jackson Merrill,,Tyler Rogers,60,8,Single,74.7,10,107,59.4,83.6,.300,
+21,,Manny Machado,,Tyler Rogers,59,8,Single,104.7,1,71,71.1,83.6,.500,
+22,,Jung Hoo Lee,,Sean Reynolds,58,7,Flyout,89.0,52,257,72.2,95.5,.010,
+23,,Heliot Ramos,,Sean Reynolds,57,7,Flyout,91.7,53,232,71.2,85.4,.000,
+24,,Casey Schmitt,,Sean Reynolds,56,7,Lineout,98.4,16,282,62.4,94.9,.630,
+25,,Luis Arraez,,Erik Miller,54,7,Groundout,80.7,4,84,52.4,98.5,.270,
+26,,Jerar Encarnacion,,Sean Reynolds,47,6,Field Error,65.9,-28,5,70.8,87.0,.040,
+27,,Willy Adames,,Sean Reynolds,46,6,Groundout,83.5,10,124,69.8,95.9,.450,
+28,,Gavin Sheets,,Landen Roupp,44,6,Groundout,57.2,-72,3,⚡77.0,85.5,.180,
+29,,Manny Machado,,Landen Roupp,42,6,Single,93.0,,41,73.5,84.2,.350,
+30,,Luis Arraez,,Landen Roupp,41,6,Groundout,82.1,-14,8,66.3,74.6,.080,
+31,,Wilmer Flores,,Ryan Bergert,40,5,Flyout,86.0,28,318,63.9,85.2,.080,0/30
+32,,Jung Hoo Lee,,Ryan Bergert,39,5,Flyout,83.4,47,243,73.7,83.8,.010,
+33,,Heliot Ramos,,Ryan Bergert,38,5,Lineout,97.6,20,312,⚡77.0,92.8,.300,0/30
+34,,Casey Schmitt,,Ryan Bergert,37,5,Single,97.7,15,226,73.5,91.5,.790,
+35,,Fernando Tatis Jr.,,Landen Roupp,36,5,Groundout,90.0,-16,9,69.8,85.8,.160,
+36,,Tyler Wade,,Landen Roupp,34,5,Flyout,92.2,35,340,65.2,75.6,.060,0/30
+37,,Patrick Bailey,,Ryan Bergert,33,4,Pop Out,82.7,78,69,71.7,83.0,.010,
+38,,Tyler Fitzgerald,,Ryan Bergert,32,4,Single,83.3,-4,27,68.8,86.7,.200,
+39,,Jerar Encarnacion,,Ryan Bergert,31,4,Groundout,79.4,-13,13,⚡77.8,92.5,.050,
+40,,Willy Adames,,Ryan Bergert,30,4,Flyout,91.5,53,260,73.3,84.3,.000,
+41,,Xander Bogaerts,,Landen Roupp,28,4,Flyout,93.8,26,336,74.1,92.4,.170,0/30
+42,,Manny Machado,,Landen Roupp,25,4,Single,108.3,-1,44,⚡77.3,85.7,.530,
+43,,Matt Chapman,,Ryan Bergert,24,3,Double,83.4,18,257,⚡76.4,86.4,.960,
+44,,Wilmer Flores,,Ryan Bergert,23,3,Single,99.1,2,75,,94.6,.480,
+45,,Jung Hoo Lee,,Ryan Bergert,22,3,Groundout,93.2,-4,27,68.9,93.4,.260,
+46,,Heliot Ramos,,Ryan Bergert,21,3,Home Run,106.5,28,421,⚡76.9,84.5,.930,28/30
+47,,Patrick Bailey,,Ryan Bergert,19,3,Double,103.0,38,371,72.4,93.8,.390,25/30
+48,,Luis Arraez,,Landen Roupp,18,3,Double Play,79.9,7,106,56.8,85.6,.310,
+49,,Fernando Tatis Jr.,,Landen Roupp,17,3,Single,86.4,24,261,72.1,91.4,.180,
+50,,Martín Maldonado,,Landen Roupp,16,3,Flyout,80.6,41,279,⚡75.0,76.4,.020,
+51,,Tyler Fitzgerald,,Ryan Bergert,15,2,Groundout,72.5,10,111,67.1,86.9,.280,
+52,,Jerar Encarnacion,,Ryan Bergert,14,2,GIDP,70.9,-23,9,⚡77.6,85.6,.040,
+53,,Tyler Wade,,Landen Roupp,11,2,Forceout,82.3,-1,39,59.3,75.8,.190,
+54,,Jake Cronenworth,,Landen Roupp,10,2,Lineout,99.0,17,337,69.0,92.8,.480,0/30
+55,,Xander Bogaerts,,Landen Roupp,9,2,Single,57.7,-61,3,69.7,93.6,.300,
+56,,Gavin Sheets,,Landen Roupp,8,2,Flyout,97.9,25,376,⚡76.1,86.7,.400,0/30
+57,,Jung Hoo Lee,,Ryan Bergert,6,1,Flyout,89.2,31,314,62.4,95.6,.070,0/30
+58,,Heliot Ramos,,Ryan Bergert,5,1,Flyout,86.3,31,327,⚡77.0,84.4,.040,0/30
+59,,Jackson Merrill,,Landen Roupp,4,1,Lineout,106.9,18,367,73.4,90.0,.630,0/30
+60,,Luis Arraez,,Landen Roupp,2,1,Lineout,82.0,9,128,64.5,76.6,.430,
+61,,Fernando Tatis Jr.,,Landen Roupp,1,1,Lineout,111.1,14,329,73.0,93.3,.730,0/30
+1,,Royce Lewis,,Elvis Alvarado,78,9,Flyout,101.9,23,391,⚡78.9,95.1,.620,0/30
+2,,Max Schuemann,,Jorge Alcala,76,8,Groundout,94.6,-56,2,67.5,97.1,.240,
+3,,JJ Bleday,,Jorge Alcala,74,8,Pop Out,82.6,86,50,⚡76.4,88.9,.000,
+4,,Ty France,,Elvis Alvarado,73,8,Groundout,79.7,3,70,66.4,97.6,.170,
+5,,Carlos Correa,,Elvis Alvarado,71,8,Groundout,92.0,-18,7,⚡80.8,87.2,.090,
+6,,Trevor Larnach,,Elvis Alvarado,70,8,Single,98.6,13,258,⚡75.6,96.8,.940,
+7,,Ryan Jeffers,,Elvis Alvarado,69,8,Double,76.7,27,252,⚡78.2,96.4,.430,
+8,,Shea Langeliers,,Justin Topa,68,7,Groundout,106.5,-2,40,⚡75.0,94.4,.430,
+9,,Tyler Soderstrom,,Justin Topa,67,7,Groundout,89.3,-37,3,⚡77.1,86.7,.060,
+10,,Lawrence Butler,,Justin Topa,65,7,Double,90.6,-1,37,71.7,93.9,.290,
+11,,Harrison Bader,,Tyler Ferguson,63,7,Lineout,55.7,22,138,66.9,93.5,.240,
+12,,Royce Lewis,,Tyler Ferguson,62,7,Double,100.0,28,392,68.0,82.7,.570,16/30
+13,,Ty France,,Tyler Ferguson,60,7,Single,92.7,9,174,74.0,91.6,.610,
+14,,Trevor Larnach,,Osvaldo Bido,57,7,Single,108.4,4,92,73.4,93.7,.570,
+15,,Logan Davidson,,Cole Sands,55,6,Single,89.4,15,237,68.5,89.0,.990,
+16,,Luis Urías,,Cole Sands,53,6,Groundout,89.3,-1,40,69.1,95.7,.300,
+17,,JJ Bleday,,Cole Sands,52,6,Groundout,75.0,-25,6,70.8,88.2,.040,
+18,,Shea Langeliers,,Cole Sands,51,6,Double,108.2,15,322,73.0,95.0,.680,0/30
+19,,Ryan Jeffers,,Osvaldo Bido,50,6,Groundout,79.3,-49,2,72.3,95.9,.140,
+20,,Byron Buxton,,Osvaldo Bido,49,6,Single,96.3,10,188,71.0,84.5,.690,
+21,,Brooks Lee,,Jacob Lopez,46,6,Single,31.4,-23,8,67.0,78.4,.270,
+22,,Ty France,,Jacob Lopez,45,6,Flyout,94.8,46,300,69.9,86.1,.010,0/30
+23,,Willi Castro,,Jacob Lopez,44,6,Home Run,105.1,21,381,⚡87.1,88.4,.740,29/30
+24,,Trevor Larnach,,Jacob Lopez,42,6,Home Run,107.2,22,432,⚡75.3,89.0,1.000,30/30
+25,,Tyler Soderstrom,,Pablo López,41,5,Groundout,95.4,-18,7,⚡77.0,80.7,.110,
+26,,Lawrence Butler,,Pablo López,39,5,Groundout,78.8,1,41,⚡78.8,88.3,.170,
+27,,Denzel Clarke,,Pablo López,38,5,Groundout,92.5,6,104,74.3,92.8,.460,
+28,,Luis Urías,,Pablo López,32,4,Flyout,92.1,37,361,72.8,92.4,.030,0/30
+29,,Brooks Lee,,Jacob Lopez,30,4,Lineout,88.0,19,310,64.6,79.7,.670,0/30
+30,,Willi Castro,,Jacob Lopez,28,4,Home Run,105.7,24,395,74.8,89.8,.930,30/30
+31,,JJ Bleday,,Pablo López,26,3,Flyout,91.0,41,310,74.7,87.6,.010,0/30
+32,,Shea Langeliers,,Pablo López,25,3,Sac Fly,92.1,29,358,72.1,82.9,.110,0/30
+33,,Tyler Soderstrom,,Pablo López,24,3,Triple,105.9,25,408,⚡77.1,87.4,.930,13/30
+34,,Brent Rooker,,Pablo López,23,3,Groundout,53.0,6,49,40.4,81.7,.100,
+35,,Trevor Larnach,,Jacob Lopez,22,3,Pop Out,93.2,63,193,⚡82.1,87.6,.010,
+36,,Byron Buxton,,Jacob Lopez,20,3,Single,60.5,24,165,⚡80.0,89.9,.430,
+37,,Lawrence Butler,,Pablo López,18,2,Groundout,106.7,,52,⚡79.6,85.2,.510,
+38,,Denzel Clarke,,Pablo López,17,2,Double,108.1,4,107,⚡75.8,95.7,.570,
+39,,Royce Lewis,,Jacob Lopez,14,2,Flyout,92.7,25,356,73.5,90.9,.150,0/30
+40,,Ty France,,Grant Holman,12,2,Single,104.4,9,181,73.8,87.0,.760,
+41,,Carlos Correa,,Grant Holman,10,2,Groundout,66.5,-26,9,71.9,85.7,.040,
+42,,Luis Urías,,Pablo López,9,1,Flyout,93.1,23,328,66.8,86.3,.150,0/30
+43,,Tyler Soderstrom,,Pablo López,6,1,Flyout,77.7,48,241,⚡76.6,84.7,.070,
+44,,Brent Rooker,,Pablo López,5,1,Single,96.2,12,220,63.3,97.0,.950,
+45,,Lawrence Butler,,Pablo López,4,1,Double,103.6,18,314,⚡75.6,94.8,.500,0/30
+46,,Trevor Larnach,,Grant Holman,3,1,Flyout,95.5,30,378,73.1,87.1,.200,0/30
+47,,Ryan Jeffers,,Grant Holman,2,1,Lineout,98.1,19,354,⚡78.5,94.2,.310,0/30
+48,,Byron Buxton,,Grant Holman,1,1,Flyout,86.1,49,281,73.0,87.2,.010,
+1,,Freddie Freeman,,José Buttó,80,10,Double,105.9,30,358,70.9,84.3,.880,10/30
+2,,Mookie Betts,,José Buttó,79,10,Lineout,85.3,24,286,62.0,87.8,.210,
+3,,Brandon Nimmo,,Tanner Scott,77,10,Groundout,93.0,-3,27,73.5,86.7,.300,
+4,,Max Muncy,,Huascar Brazobán,71,9,Home Run,109.8,34,408,74.4,96.8,.940,30/30
+5,,Luis Torrens,,Anthony Banda,70,9,Flyout,100.9,29,376,70.4,84.1,.630,0/30
+6,,Francisco Lindor,,José Ureña,69,9,Lineout,83.2,26,300,71.7,95.7,.130,0/30
+7,,Jeff McNeil,,José Ureña,68,9,Double,105.1,15,307,72.3,96.4,.670,0/30
+8,,Francisco Alvarez,,José Ureña,67,9,Groundout,79.3,-44,3,73.5,95.3,.090,
+9,,Teoscar Hernández,,Reed Garrett,65,8,Fielders Choice Out,70.4,-13,12,⚡80.2,90.3,.080,
+10,,Mookie Betts,,Reed Garrett,63,8,Single,73.3,33,262,72.0,93.7,.360,
+11,,Ronny Mauricio,,Alex Vesia,61,8,Pop Out,92.1,69,128,⚡80.3,84.9,.010,
+12,,Tyrone Taylor,,Alex Vesia,60,8,Single,90.3,18,295,69.2,93.6,.610,
+13,,Brandon Nimmo,,Alex Vesia,59,8,Pop Out,84.2,79,49,73.9,85.7,.010,
+14,,Pete Alonso,,Ben Casparius,58,8,Groundout,91.4,5,80,⚡76.4,87.1,.470,
+15,,Tommy Edman,,Brandon Waddell,57,7,Groundout,70.9,-23,8,⚡75.7,82.6,.050,
+16,,Andy Pages,,Brandon Waddell,55,7,Groundout,63.8,-23,6,⚡76.8,87.0,.060,
+17,,Max Muncy,,Brandon Waddell,54,7,Lineout,86.1,14,180,71.1,92.3,.910,
+18,,Juan Soto,,Ben Casparius,53,7,Groundout,105.1,3,71,⚡77.1,85.0,.560,
+19,,Will Smith,,Tylor Megill,50,6,Flyout,101.9,44,328,71.5,96.1,.070,0/30
+20,,Freddie Freeman,,Tylor Megill,48,6,Groundout,104.4,-19,4,,89.0,.190,
+21,,Jeff McNeil,,Ben Casparius,47,6,Flyout,83.2,31,274,71.5,96.2,.050,
+22,,Francisco Alvarez,,Ben Casparius,46,6,Pop Out,92.7,69,195,74.4,87.8,.010,
+23,,Ronny Mauricio,,Ben Casparius,45,6,Groundout,78.9,9,111,64.7,79.7,.360,
+24,,Mookie Betts,,Tylor Megill,44,5,Lineout,88.8,19,273,65.9,95.3,.650,
+25,,Tyrone Taylor,,Ben Casparius,41,5,Lineout,101.3,12,283,69.0,84.6,.950,
+26,,Brandon Nimmo,,Clayton Kershaw,40,5,Single,86.6,-27,4,74.8,86.9,.070,
+27,,Pete Alonso,,Clayton Kershaw,39,5,Double,112.7,13,273,⚡80.9,86.2,.810,
+28,,Juan Soto,,Clayton Kershaw,38,5,Pop Out,94.2,65,153,⚡78.8,85.3,.000,
+29,,Starling Marte,,Clayton Kershaw,37,5,Fielders Choice,97.0,-8,17,72.2,89.7,.250,
+30,,Jeff McNeil,,Clayton Kershaw,35,5,Lineout,100.9,19,337,71.4,84.3,.360,0/30
+31,,Andy Pages,,Tylor Megill,33,4,Double,96.1,5,135,71.4,95.7,.510,
+32,,Will Smith,,Tylor Megill,31,4,Flyout,93.0,46,288,72.1,95.3,.010,
+33,,Francisco Alvarez,,Clayton Kershaw,30,4,Groundout,100.9,-12,8,⚡78.4,85.5,.200,
+34,,Tyrone Taylor,,Clayton Kershaw,28,4,Groundout,106.4,4,90,72.6,88.0,.590,
+35,,Teoscar Hernández,,Tylor Megill,27,3,Lineout,98.7,18,294,64.8,96.6,.370,
+36,,Freddie Freeman,,Tylor Megill,26,3,Pop Out,59.0,64,124,70.5,96.7,.000,
+37,,Mookie Betts,,Tylor Megill,25,3,Flyout,96.3,46,291,71.0,81.2,.000,
+38,,Brandon Nimmo,,Clayton Kershaw,24,3,Flyout,91.4,38,306,⚡76.4,89.8,.020,0/30
+39,,Pete Alonso,,Clayton Kershaw,23,3,Groundout,90.5,-18,11,⚡77.9,86.4,.090,
+40,,Juan Soto,,Clayton Kershaw,22,3,Home Run,102.1,31,397,⚡78.6,91.2,.660,30/30
+41,,Starling Marte,,Clayton Kershaw,21,3,Groundout,72.7,-75,1,57.6,90.5,.290,
+42,,Francisco Lindor,,Clayton Kershaw,20,3,Single,103.8,8,163,⚡77.1,86.8,.670,
+43,,Shohei Ohtani,,Tylor Megill,19,2,Flyout,93.0,50,275,73.7,96.1,.010,
+44,,Michael Conforto,,Tylor Megill,17,2,Groundout,81.8,-24,5,⚡83.0,81.1,.050,
+45,,Jeff McNeil,,Clayton Kershaw,16,2,Flyout,91.4,29,319,69.1,91.1,.070,0/30
+46,,Ronny Mauricio,,Clayton Kershaw,14,2,GIDP,99.9,-21,4,73.6,87.4,.140,
+47,,Andy Pages,,Tylor Megill,12,1,Groundout,75.2,-27,3,63.6,79.9,.040,
+48,,Max Muncy,,Tylor Megill,11,1,Home Run,108.3,30,407,⚡75.5,95.1,.970,30/30
+49,,Will Smith,,Tylor Megill,10,1,Groundout,66.0,-50,3,62.9,81.8,.240,
+50,,Freddie Freeman,,Tylor Megill,8,1,Double,92.7,10,150,65.8,88.5,.660,
+51,,Mookie Betts,,Tylor Megill,7,1,Single,93.6,16,266,,97.6,.760,
+52,,Pete Alonso,,Clayton Kershaw,4,1,Single,99.0,8,134,69.6,71.8,.630,
+53,,Juan Soto,,Clayton Kershaw,3,1,Pop Out,78.8,83,50,68.4,90.2,.000,
+54,,Starling Marte,,Clayton Kershaw,2,1,Single,102.9,6,138,69.2,72.2,.650,
+55,,Francisco Lindor,,Clayton Kershaw,1,1,Flyout,95.9,47,309,64.4,89.0,.000,0/30
