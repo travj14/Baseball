@@ -12,7 +12,7 @@ def get_ev(year, month, day):
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
-        page.goto("https://baseballsavant.mlb.com/gamefeed?date=" + date_format(year, month, day) + "&chartType=pitch&legendType=pitchName&playerType=pitcher&inning=&count=&pitchHand=&batSide=&descFilter=&ptFilter=&resultFilter=&hf=exitVelocity&sportId=1")
+        page.goto("https://baseballsavant.mlb.com/gamefeed?date=" + date_format(year, month, day) + "&chartType=pitch&legendType=pitchName&playerType=pitcher&inning=&count=&pitchHand=&batSide=&descFilter=&ptFilter=&resultFilter=&hf=scoreboard&sportId=1")
 
         # page.wait_for_selector("tr[id^='exitVelocityTable_']", timeout=10000)
         time.sleep(10)
@@ -23,13 +23,17 @@ def get_ev(year, month, day):
 
         #tables = soup.find_all(class_="table-savant")
 
-        metas = soup.find_all("tr", id=re.compile("exitVelocityTable"))
+        metas = soup.find_all("tr", id=re.compile("scoreboardExitVeloContainer"))
 
         exit_velo = []
 
         for row in metas:
             cells = row.find_all(["td", "th"])  # include both headers and data cells
-            values = [cell.get_text(strip=True) for cell in cells]
+
+            id = cells[1].find("img")['src'].split("/")[-3]
+
+            # Get text from remaining cells
+            values = [id] + [cell.get_text(strip=True) for cell in cells[1:]]
             exit_velo.append(values)
         
         columns = soup.find_all("tr", class_="tr-component-row")
@@ -37,14 +41,15 @@ def get_ev(year, month, day):
         row = columns[-1]
         cells = row.find_all(["td", "th"])
         ev_header = [cell.get_text(strip=True) for cell in cells]
+        ev_header[0] = "id"
 
-        ev_header[8] = "EV"
-        ev_header[9] = "LA"
-        ev_header[10] = "Dist"
-        ev_header[11] = "Bat_speed"
-        ev_header[12] = "Pitch_velo"
-        ev_header[13] = "xBA"
-        ev_header[14] = "numParks"
+        ev_header[5] = "EV"
+        ev_header[6] = "LA"
+        ev_header[7] = "Dist"
+        ev_header[8] = "Bat_speed"
+        ev_header[9] = "Pitch_velo"
+        ev_header[10] = "xBA"
+        ev_header[11] = "numParks"
 
         browser.close()
         return pd.DataFrame(exit_velo, columns = ev_header)
@@ -61,7 +66,7 @@ def get_pitch(year, month, day):
 
         page.goto("https://baseballsavant.mlb.com/gamefeed?date=" + date_format(year, month, day) + "&chartType=pitch&legendType=pitchName&playerType=pitcher&inning=&count=&pitchHand=&batSide=&descFilter=&ptFilter=&resultFilter=&hf=pitchVelocity&sportId=1")
 
-        time.sleep(10)
+        time.sleep(15)
 
         content = page.content()
 
@@ -97,3 +102,5 @@ def get_pitch(year, month, day):
         df.loc[df[col_condition] == "→", col_negate] *= -1
 
         return df
+
+

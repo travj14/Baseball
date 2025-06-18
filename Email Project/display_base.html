@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            .button-container {
+                margin-bottom: 20px;
+            }
+
+            .toggle-button {
+                padding: 10px 20px;
+                margin-right: 10px;
+                border: 2px solid rgb(65, 174, 186);
+                background-color: white;
+                color: rgb(65, 174, 186);
+                cursor: pointer;
+                border-radius: 6px;
+                font-weight: bold;
+                transition: all 0.2s ease;
+            }
+
+            .toggle-button.active {
+                background-color: rgb(65, 174, 186);
+                color: white;
+            }
+
+            .table-set {
+                display: none;
+            }
+
+            .table-set.active {
+                display: block;
+            }
+
+            .table-rows {
+                display: flex;
+                flex-wrap: nowrap;
+                margin-bottom: 20px;
+            }
+    
+            table {
+                border-collapse: separate;
+                border-spacing: 0;
+                border: 3px solid rgb(65, 174, 186);
+                border-radius: 12px;
+                margin-right: 20px;
+            }
+    
+            th, td {
+                border: none;
+                padding: 5px 10px;
+                position: relative;
+            }
+
+            tr {
+                position: relative;
+            }
+
+            tr::after {
+                content: "";
+                position: absolute;
+                left: 3%;   /* controls how much shorter it is */
+                right: 3%;  /* shorter = increase both left and right */
+                bottom: 0;
+                height: 2px;
+                background-color: lightgray;
+            }
+
+            tr:last-child::after {
+                content: none;
+            }
+
+            td:not(:first-child),
+            th:not(:first-child) {
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    
+
+<body>
+<h1>Risers and Fallers</h1>
+<p>Your daily newsletter containing the best performances of the night, plus who's been generally hot and cold across the league</p>
+
+<div class="button-container">
+    <button class="toggle-button active" onclick="showSet('leaders', this)">Period Leaders</button>
+    <button class="toggle-button" onclick="showSet('movers', this)">Period Movers</button>
+</div>
+
+<div class="table-set active" data-set="leaders">
+
+<h3>Daily Leaders</h3>
+
+<div class="table-rows">
+<table border="1" id="daily woba">
+<tr>
+    <th colspan="3">wOBA leaders</th>
+</tr>
+<tr>
+    <th>Name</th>
+    <th>PA</th>
+    <th>wOBA</th>
+</tr>
+</table>
+
+<table border="1" id="daily hardHit">
+<tr><th colspan="2">Hard Hits</th></tr>
+<tr><th>Name</th><th>#</th></tr>
+</table>
+
+<table border="1" id="daily hardRate">
+    <tr><th colspan="3">Hard Hit Rate</th></tr>
+    <tr><th>Name</th><th>PA</th><th>%</th></tr>
+</table>
+
+<table border="1" id="daily tbs">
+    <tr><th colspan="3">Total Bases</th></tr>
+    <tr><th>Name</th><th>PA</th><th>Bases</th></tr>
+</table>
+</div>
+
+<h3>7 day leaders</h3>
+
+<div class="table-rows">
+<table border="1" id="7 woba">
+<tr><th colspan="3">wOBA leaders</th></tr>
+<tr><th>Name</th><th>PA</th><th>wOBA</th></tr>
+</table>
+
+<table border="1" id="7 hardHit">
+<tr><th colspan="2">Hard Hits</th></tr>
+<tr><th>Name</th><th>#</th></tr>
+</table>
+
+<table border="1" id="7 hardRate">
+    <tr><th colspan="3">Hard Hit Rate</th></tr>
+    <tr><th>Name</th><th>PA</th><th>%</th></tr>
+</table>
+
+<table border="1" id="7 tbs">
+    <tr><th colspan="3">Total Bases</th></tr>
+    <tr><th>Name</th><th>PA</th><th>Bases</th></tr>
+</table>
+</div>
+
+<h3>14 Day Leaders</h3>
+
+<div class="table-rows">
+<table border="1" id="14 woba">
+    <tr><th colspan="3">wOBA leaders</th></tr>
+    <tr><th>Name</th><th>PA</th><th>wOBA</th></tr>
+    </table>
+    
+    <table border="1" id="14 hardHit">
+    <tr><th colspan="2">Hard Hits</th></tr>
+    <tr><th>Name</th><th>#</th></tr>
+    </table>
+    
+    <table border="1" id="14 hardRate">
+        <tr><th colspan="3">Hard Hit Rate</th></tr>
+        <tr><th>Name</th><th>PA</th><th>%</th></tr>
+    </table>
+    
+    <table border="1" id="14 tbs">
+        <tr><th colspan="3">Total Bases</th></tr>
+        <tr><th>Name</th><th>PA</th><th>Bases</th></tr>
+    </table>
+</div>
+
+<h3>30 Day Leaders</h3>
+
+<div class="table-rows">
+<table border="1" id="30 woba">
+<tr><th colspan="3">wOBA leaders</th></tr>
+<tr><th>Name</th><th>PA</th><th>wOBA</th></tr>
+</table>
+
+<table border="1" id="30 hardHit">
+<tr><th colspan="2">Hard Hits</th></tr>
+<tr><th>Name</th><th>#</th></tr>
+</table>
+
+<table border="1" id="30 hardRate">
+    <tr><th colspan="3">Hard Hit Rate</th></tr>
+    <tr><th>Name</th><th>PA</th><th>%</th></tr>
+</table>
+
+<table border="1" id="30 tbs">
+    <tr><th colspan="3">Total Bases</th></tr>
+    <tr><th>Name</th><th>PA</th><th>Bases</th></tr>
+</table>
+</div>
+
+<h3>60 Day Leaders</h3>
+
+<div class="table-rows">
+<table border="1" id="60 woba">
+    <tr><th colspan="3">wOBA leaders</th></tr>
+    <tr><th>Name</th><th>PA</th><th>wOBA</th></tr>
+    </table>
+    
+    <table border="1" id="60 hardHit">
+    <tr><th colspan="2">Hard Hits</th></tr>
+    <tr><th>Name</th><th>#</th></tr>
+    </table>
+    
+    <table border="1" id="60 hardRate">
+        <tr><th colspan="3">Hard Hit Rate</th></tr>
+        <tr><th>Name</th><th>PA</th><th>%</th></tr>
+    </table>
+    
+    <table border="1" id="60 tbs">
+        <tr><th colspan="3">Total Bases</th></tr>
+        <tr><th>Name</th><th>PA</th><th>Bases</th></tr>
+    </table>
+</div>
+</div>
+
+<div class="table-set" data-set="movers">
+    <h3>Future Data Here</h3>
+</div>   
+
+<script>
+    function showSet(setName, btn) {
+        // Hide all table sets
+        document.querySelectorAll('.table-set').forEach(set => {
+            set.classList.remove('active');
+        });
+        // Show the one with matching data-set
+        document.querySelector(`.table-set[data-set="${setName}"]`).classList.add('active');
+        // Toggle button styles
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.classList.remove('active');
+        });
+        btn.classList.add('active');
+    }
+</script>
+</body>
+</html>

@@ -1,28 +1,26 @@
 import email_updater
 import savant_scraper
 from datetime import date, timedelta
-import pandas
+import pandas as pd
 import sys
 
-email = sys.argv[1]
-code = sys.argv[2]
+# email = sys.argv[1]
+# code = sys.argv[2]
 
-day = date.today()
+day = date.today() - timedelta(days=1)
 
-print(day.year)
-print(day.month)
-print(day.day)
+year = day.year
+month = day.month
+day = day.day
 
-df = savant_scraper.get_ev(2025, 6, 3)
-df.to_csv("ev_data" + savant_scraper.date_format(day.year, day.month, day.day) + ".csv", index=False)
+df = savant_scraper.get_ev(year, month, day)
+df.to_csv("Game Data/ev_data" + savant_scraper.date_format(year, month, day) + ".csv", index=False)
 
-pitch_df = savant_scraper.get_pitch(2025, 6, 3)
-pitch_df.to_csv("pitch_data" + savant_scraper.date_format(day.year, day.month, day.day) +".csv", index=False)
+pitch_df = savant_scraper.get_pitch(year, month, day)
+pitch_df.to_csv("Game Data/pitch_data" + savant_scraper.date_format(year, month, day) +".csv", index=False)
 
-print(df)
-print(pitch_df)
 
-email_updater.send_email(email, code, "hi")
+# email_updater.send_email(email, code, "hi")
 
 
 
