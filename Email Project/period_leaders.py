@@ -2,6 +2,7 @@ from datetime import date, timedelta
 import pandas as pd
 import savant_scraper
 from bs4 import BeautifulSoup
+from comparing_periods import summarize
 
 mapping = {
     'Single': 1,
@@ -204,6 +205,34 @@ def period_risers(soup, period_length):
 
     print(hard_hit_rate)
     print()
+
+def period_comparison(soup, period_length):
+    if period_length == 30:
+        df = pd.read_csv("Game Data/30_day_ev.csv")
+        df2 = pd.read_csv("Game Data/60_day_ev.csv")
+    elif period_length == 14:
+        df = pd.read_csv("Game Data/14_day_ev.csv")
+        df2 = pd.read_csv("Game Data/30_day_ev.csv")
+    else:
+        raise ValueError("Wrong input dipshit")
+    
+    df = summarize(df)
+    df2 = summarize(df2)
+
+    merged = pd.DataFrame({
+        "Woba Diff": df["woba"] - df2["woba"],
+        "Avg Diff": df["avg"] - df2["avg"],
+        "Obp Diff": df["obp"] - df2["obp"],
+        "Slg Diff": df["slg"] - df2["slg"]
+    })
+    merged = df.merge(merged, left_index=True, right_index=True)
+
+    merged = merged.droplevel('id')
+
+    soup = change_html(soup, str(period_length) + "-movers", merged)
+
+    return soup
+
 
 
 

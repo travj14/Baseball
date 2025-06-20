@@ -16,33 +16,101 @@ woba_mapping = {
     'Hit By Pitch' : .72
 }
 
-singles = { 'single': 0,
-    'Double': 0,
-    'Triple': 0,
-    'Home Run': 1}
+obp_mapping = {
+    'Single' : 1, 
+    'Double' : 1,
+    'Triple' : 1,
+    'Home Run' : 1, 
+    'Walk' : 1, 
+    'Hit By Pitch' : 1
+}
+
+avg_map = { 1: 1,
+    2: 1,
+    3: 1,
+    4: 1}
+
+
 
 
 df_60 = pd.read_csv("Game Data/60_day_ev.csv")
-df_30 = pd.read_csv("Game Data/60_day_ev.csv")
-df_14 = pd.read_csv("Game Data/60_day_ev.csv")
-df_7 = pd.read_csv("Game Data/60_day_ev.csv")
+df_30 = pd.read_csv("Game Data/30_day_ev.csv")
+df_14 = pd.read_csv("Game Data/14_day_ev.csv")
+# df_7 = pd.read_csv("Game Data/60_day_ev.csv")
 
 def summarize(df):
-    print(df)
 
-    df = df[~df['Result'].isin(['Caught Stealing 2B', 'Sac Bunt', 'Sac Fly', 'Catcher Interference', 'Intent Walk', 'Pickoff 1B', 'Runner Out', 'Caught Stealing 3B', 'Wild Pitch', 'Pickoff Error 1B'])]
-    df['Result'] = df['Result'].map(singles).fillna(0.0).astype(float)
+    hard_hits = df[df["EV"] >= 95]
 
-    print(df)
+    hard_hits = hard_hits.groupby(["id", "Batter"])['PA'].count()
 
-    print(df.groupby('Batter').agg(
+    pas = df.groupby(["id", "Batter"])['PA'].count()
+
+    hard_hit_rate = hard_hits / pas
+
+    woba_df = df[~df['Result'].isin(['Caught Stealing 2B', 'Sac Bunt', 'Sac Fly', 'Sac Fly Double Play', 'Runner Out',
+                                    'Catcher Interference', 'Intent Walk', 'Pickoff 1B', 'Pickoff 3B', 'Pickoff Error 1B',
+                                    'Runner Out', 'Caught Stealing 3B', 'Wild Pitch', 'Pickoff Error 1B', 'Stolen Base 2B',
+                                    'Pickoff Caught Stealing 3B', 'Pickoff Caught Stealing 2B', 'Pickoff 2B', 'Pickoff 3B'])]
+    woba_df['Result'] = woba_df['Result'].map(woba_mapping).fillna(0.0).astype(float)
+
+    print(woba_df)
+
+    woba = woba_df.groupby(['id', 'Batter']).agg(
         PA=('PA', 'count'),
-        woba=('Result', 'sum')).sort_values("woba", ascending=False))
-    print(df.groupby('Batter')['Result'].mean().sort_values(ascending=False))
+        woba=('Result', 'mean')).sort_values("PA", ascending=False)
+    print(woba_df.groupby('Batter')['Result'].mean().sort_values(ascending=False))
 
-    return df
+    
+
+    ab_df = df[~df['Result'].isin(['Caught Stealing 2B', 'Sac Bunt', 'Sac Fly', 'Sac Fly Double Play', 'Runner Out',
+                                    'Catcher Interference', 'Intent Walk', 'Pickoff 1B', 'Pickoff 3B', 'Pickoff Error 1B',
+                                    'Runner Out', 'Caught Stealing 3B', 'Wild Pitch', 'Pickoff Error 1B', 'Stolen Base 2B',
+                                    'Pickoff Caught Stealing 3B', 'Pickoff Caught Stealing 2B', 'Pickoff 2B', 'Pickoff 3B', 'Walk', 'Hit By Pitch'])]
+
+    slg_df = ab_df
+    slg_df['Result'] = slg_df['Result'].map(slg_mapping).fillna(0.0).astype(float)
+
+    slg = slg_df.groupby(['id', 'Batter']).agg(
+        AB=('PA', 'count'),
+        slg=('Result', 'mean')).sort_values("AB", ascending=False)
+    
+    slg_df['Result'] = slg_df['Result'].map(avg_map).fillna(0.0).astype(float)
+    avg = slg_df.groupby(['id', 'Batter']).agg(
+        AB=('PA', 'count'),
+        avg=('Result', 'mean')).sort_values("AB", ascending=False)
+    
+    print(slg)
+    print(avg)
+
+    obp_df = df[~df['Result'].isin(['Caught Stealing 2B', 'Sac Bunt', 'Sac Fly', 'Sac Fly Double Play', 'Runner Out',
+                                    'Catcher Interference', 'Intent Walk', 'Pickoff 1B', 'Pickoff 3B', 'Pickoff Error 1B',
+                                    'Runner Out', 'Caught Stealing 3B', 'Wild Pitch', 'Pickoff Error 1B', 'Stolen Base 2B',
+                                    'Pickoff Caught Stealing 3B', 'Pickoff Caught Stealing 2B', 'Pickoff 2B', 'Pickoff 3B'])]
+    obp_df['Result'] = obp_df['Result'].map(woba_mapping).fillna(0.0).astype(float)
+
+    obp = obp_df.groupby(['id', 'Batter']).agg(
+        PA=('PA', 'count'),
+        obp=('Result', 'mean')
+    ).sort_values('PA', ascending=False)
+
+    print(obp)
+
+    merged = woba.merge(slg, left_index=True, right_index=True)
+    merged = merged.merge(avg, left_index=True, right_index=True)
+    merged = merged.merge(obp, left_index=True, right_index=True)
+    merged = merged.drop(columns=['PA_y', 'AB_y'])
+    merged = merged.rename(columns={
+        'PA_x': 'PA',
+        'AB_x': 'AB'
+    })
+    merged = merged[['PA', 'AB', 'woba', 'avg', 'obp', 'slg']]
+
+    return merged
+
+
 
 print(set(df_60['Result'].tolist()))
 
-summarize(df_60)
+summarize(df_30)
 

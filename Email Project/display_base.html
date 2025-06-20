@@ -7,6 +7,64 @@
                 font-family: sans-serif;
             }
 
+            .search-bar {
+                display: flex;
+                align-items: center; /* vertically center */
+                gap: 12px; /* space between search and button */
+            }
+
+            .search {
+                --padding: 14px;
+
+                width: max-content;
+                display: flex;
+                align-items: center;
+                padding: var(--padding);
+                border-radius: 14px;
+                background: #f6f6f6;
+                transition: box-shadow 0.25s;
+                margin-bottom: 20px;
+            }
+
+            .search:focus-within {
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+            }
+
+            .search-input {
+                font-size: 20px;
+                color: #333333;
+                margin-left: 0px;
+                outline: none;
+                border: none;
+                background: transparent;
+            }
+
+            .scrollable {
+                display: none;
+            }
+
+            .scrollable.active {
+                max-height: 300px; /* set your desired height */
+                min-height: 300px;
+                overflow-y: auto;
+                border: 3px solid rgb(65, 174, 186);
+                border-radius: 12px;
+                padding: 0;
+                display: inline-block;
+                background-clip: padding-box;
+                display: block;
+                width: max-content;
+            }
+
+            .scrollable-table {
+                width: 100%;
+                table-layout: auto;  /* allows dynamic column sizing */
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin-right: 0;
+                border: 0px;
+            }
+
             .button-container {
                 margin-bottom: 20px;
             }
@@ -41,6 +99,12 @@
                 flex-wrap: nowrap;
                 margin-bottom: 20px;
             }
+
+            .table-head {
+                position: sticky; 
+                top: 0; 
+                background: white;
+            }
     
             table {
                 border-collapse: separate;
@@ -54,6 +118,12 @@
                 border: none;
                 padding: 5px 10px;
                 position: relative;
+            }
+
+            th {
+                position: sticky;
+                top: 0;
+                z-index: 2; /* ensures header stays above content */
             }
 
             tr {
@@ -77,6 +147,11 @@
             td:not(:first-child),
             th:not(:first-child) {
                 text-align: center;
+            }
+
+            th.active-header {
+                background-color: rgb(65, 174, 186);
+                color: white;
             }
 
         </style>
@@ -222,7 +297,59 @@
 </div>
 
 <div class="table-set" data-set="movers">
-    <h3>Future Data Here</h3>
+    <div class="search-bar">
+        <div class="search">
+            <span class="material-symbols-outlined"></span>
+            <input class="search-input" type="text" id="searchInput" oninput="filterTable()" placeholder="Search..." />
+        </div>
+
+        <div class="button-container" id="qualified">
+            <button class="toggle-button" onclick="qualify('30-movers', this)" style="padding: 4px 8px; font-size: 12px;">Qualified Hitters</button>
+        </div>
+    </div>
+
+    <div class="button-container" id="moving-days">
+        <button class="toggle-button active" onclick="showPeriod('30', this)">30 Day Window</button>
+        <button class="toggle-button" onclick="showPeriod('14', this)">14 Day Window</button>
+    </div>
+
+    <div class = "scrollable active" id="30">
+        <table id="30-movers" class = "scrollable-table" data-set="30" style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <th class="table-head" onclick="sortTable('30-movers', 0)">Name</th>
+                <th class="table-head" onclick="sortTable('30-movers', 1)">PA</th>
+                <th class="table-head" onclick="sortTable('30-movers', 2)">AB</th>
+                <th class="table-head" onclick="sortTable('30-movers', 3)">wOBA</th>
+                <th class="table-head" onclick="sortTable('30-movers', 4)">AVG</th>
+                <th class="table-head" onclick="sortTable('30-movers', 5)">OBP</th>
+                <th class="table-head" onclick="sortTable('30-movers', 6)">SLG</th>
+                <th class="table-head" onclick="sortTable('30-movers', 7)">wOBA Diff</th>
+                <th class="table-head" onclick="sortTable('30-movers', 8)">AVG Diff</th>
+                <th class="table-head" onclick="sortTable('30-movers', 9)">OBP Diff</th>
+                <th class="table-head" onclick="sortTable('30-movers', 10)">SLG Diff</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class = "scrollable" id="14">
+        <table id="14-movers" class = "scrollable-table" data-set="14" style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <th class="table-head" onclick="sortTable('14-movers', 0)">Name</th>
+                <th class="table-head" onclick="sortTable('14-movers', 1)">PA</th>
+                <th class="table-head" onclick="sortTable('14-movers', 2)">AB</th>
+                <th class="table-head" onclick="sortTable('14-movers', 3)">wOBA</th>
+                <th class="table-head" onclick="sortTable('14-movers', 4)">AVG</th>
+                <th class="table-head" onclick="sortTable('14-movers', 5)">OBP</th>
+                <th class="table-head" onclick="sortTable('14-movers', 6)">SLG</th>
+                <th class="table-head" onclick="sortTable('14-movers', 7)">wOBA Diff</th>
+                <th class="table-head" onclick="sortTable('14-movers', 8)">AVG Diff</th>
+                <th class="table-head" onclick="sortTable('14-movers', 9)">OBP Diff</th>
+                <th class="table-head" onclick="sortTable('14-movers', 10)">SLG Diff</th>
+            </tr>
+
+        </table>
+    </div>
 </div>   
 
 <script>
@@ -238,6 +365,108 @@
             button.classList.remove('active');
         });
         btn.classList.add('active');
+    }
+
+    function showPeriod(setId, btn) {
+
+        document.querySelectorAll('.scrollable').forEach(div => {
+            div.classList.remove('active');
+            div.style.display = 'none';
+        });
+
+        // Show the selected scrollable div
+        const target = document.getElementById(setId);
+        if (target) {
+            target.classList.add('active');
+            target.style.display = 'block';
+        }
+
+        // Update active state on buttons
+        document.querySelectorAll('#moving-days .toggle-button').forEach(button => {
+            button.classList.remove('active');
+        });
+        btn.classList.add('active');
+    }
+
+    function filterTable() {
+        const input = document.getElementById("searchInput").value.toLowerCase();
+        const table = document.getElementById("30-movers");
+        const rows = table.getElementsByTagName("tr");
+
+        for (let i = 1; i < rows.length; i++) { // Start at 1 to skip the header
+            const rowText = rows[i].textContent.toLowerCase();
+            rows[i].style.display = rowText.includes(input) ? "" : "none";
+        }
+    }
+
+    let sortDirection = {}; // Keeps track of column sort directions
+
+    function sortTable(tableId, colIndex) {
+        const table = document.getElementById(tableId);
+        const rowsArray = Array.from(table.rows).slice(1); // Exclude header row
+        const headerCell = table.rows[0].cells[colIndex];
+
+        // Toggle direction
+        sortDirection[colIndex] = !sortDirection[colIndex];
+
+        // Detect if column is numeric
+        const isNumeric = rowsArray.every(row => !isNaN(row.cells[colIndex].innerText.trim()));
+
+        // Sort rows
+        rowsArray.sort((a, b) => {
+            let valA = a.cells[colIndex].innerText.trim();
+            let valB = b.cells[colIndex].innerText.trim();
+
+            if (isNumeric) {
+                valA = parseFloat(valA);
+                valB = parseFloat(valB);
+            }
+
+            if (valA < valB) return sortDirection[colIndex] ? -1 : 1;
+            if (valA > valB) return sortDirection[colIndex] ? 1 : -1;
+            return 0;
+        });
+
+        // Remove all previous active-header classes
+        Array.from(table.rows[0].cells).forEach(th => {
+            th.classList.remove("active-header");
+            th.textContent = th.textContent.replace(/[\u25B2\u25BC]/g, ""); // Remove arrows
+        });
+
+        // Add active-header to current header
+        headerCell.classList.add("active-header");
+        headerCell.textContent += sortDirection[colIndex] ? " ▲" : " ▼";
+
+        // Reinsert sorted rows
+        rowsArray.forEach(row => table.appendChild(row));
+    }
+
+    let qualifiedOnly = false; // start by showing qualified rows
+
+    function qualify(tableId, btn) {
+        btn.classList.toggle('active');
+        qualifiedOnly = !qualifiedOnly;
+
+        const table = document.getElementById(tableId);
+        const rows = table.querySelectorAll("tr");
+
+        // Skip the header row (index 0)
+        for (let i = 1; i < rows.length; i++) {
+            const paCell = rows[i].cells[1]; // 2nd column = PA
+            const pa = parseFloat(paCell.textContent);
+
+            if (qualifiedOnly) {
+            // Hide unqualified hitters
+            if (pa < 45) {
+                rows[i].style.display = "none";
+            } else {
+                rows[i].style.display = "";
+            }
+            } else {
+            // Show all hitters
+            rows[i].style.display = "";
+            }
+        }
     }
 </script>
 </body>

@@ -2,7 +2,7 @@ from datetime import date, timedelta
 import pandas as pd
 import savant_scraper
 from bs4 import BeautifulSoup
-from period_leaders import period_leaders
+from period_leaders import period_leaders, period_comparison
 
 pd.set_option("display.float_format", "{:.5f}".format)
 
@@ -174,6 +174,9 @@ soup = period_leaders(soup, 7)
 soup = period_leaders(soup, 14)
 soup = period_leaders(soup, 30)
 soup = period_leaders(soup, 60)
+
+soup = period_comparison(soup, 30)
+soup = period_comparison(soup, 14)
 
 # Save the modified HTML
 with open("display.html", "w") as f:
