@@ -304,7 +304,10 @@
         </div>
 
         <div class="button-container" id="qualified">
-            <button class="toggle-button" onclick="qualify('30-movers', this)" style="padding: 4px 8px; font-size: 12px;">Qualified Hitters</button>
+            <button class="toggle-button" onclick="qualifyActiveMoverTable(this)" style="padding: 4px 8px; font-size: 12px;">Qualified Hitters</button>
+        </div>
+        <div class="button-container" id="qualified">
+            <button class="toggle-button" onclick="findNewHitters(this)" style="padding: 4px 8px; font-size: 12px;">New Hitters</button>
         </div>
     </div>
 
@@ -323,10 +326,14 @@
                 <th class="table-head" onclick="sortTable('30-movers', 4)">AVG</th>
                 <th class="table-head" onclick="sortTable('30-movers', 5)">OBP</th>
                 <th class="table-head" onclick="sortTable('30-movers', 6)">SLG</th>
-                <th class="table-head" onclick="sortTable('30-movers', 7)">wOBA Diff</th>
-                <th class="table-head" onclick="sortTable('30-movers', 8)">AVG Diff</th>
-                <th class="table-head" onclick="sortTable('30-movers', 9)">OBP Diff</th>
-                <th class="table-head" onclick="sortTable('30-movers', 10)">SLG Diff</th>
+                <th class="table-head" onclick="sortTable('30-movers', 7)">K%</th>
+                <th class="table-head" onclick="sortTable('30-movers', 8)">Hard Hit%</th>
+                <th class="table-head" onclick="sortTable('30-movers', 9)">wOBA Diff</th>
+                <th class="table-head" onclick="sortTable('30-movers', 10)">AVG Diff</th>
+                <th class="table-head" onclick="sortTable('30-movers', 11)">OBP Diff</th>
+                <th class="table-head" onclick="sortTable('30-movers', 12)">SLG Diff</th>
+                <th class="table-head" onclick="sortTable('30-movers', 13)">K% Diff</th>
+                <th class="table-head" onclick="sortTable('30-movers', 14)">Hard Hit% Diff</th>
             </tr>
 
         </table>
@@ -342,10 +349,14 @@
                 <th class="table-head" onclick="sortTable('14-movers', 4)">AVG</th>
                 <th class="table-head" onclick="sortTable('14-movers', 5)">OBP</th>
                 <th class="table-head" onclick="sortTable('14-movers', 6)">SLG</th>
-                <th class="table-head" onclick="sortTable('14-movers', 7)">wOBA Diff</th>
-                <th class="table-head" onclick="sortTable('14-movers', 8)">AVG Diff</th>
-                <th class="table-head" onclick="sortTable('14-movers', 9)">OBP Diff</th>
-                <th class="table-head" onclick="sortTable('14-movers', 10)">SLG Diff</th>
+                <th class="table-head" onclick="sortTable('14-movers', 7)">K%</th>
+                <th class="table-head" onclick="sortTable('14-movers', 8)">Hard Hit%</th>
+                <th class="table-head" onclick="sortTable('14-movers', 9)">wOBA Diff</th>
+                <th class="table-head" onclick="sortTable('14-movers', 10)">AVG Diff</th>
+                <th class="table-head" onclick="sortTable('14-movers', 11)">OBP Diff</th>
+                <th class="table-head" onclick="sortTable('14-movers', 12)">SLG Diff</th>
+                <th class="table-head" onclick="sortTable('14-movers', 13)">K% Diff</th>
+                <th class="table-head" onclick="sortTable('14-movers', 14)">Hard Hit% Diff</th>
             </tr>
 
         </table>
@@ -386,15 +397,32 @@
             button.classList.remove('active');
         });
         btn.classList.add('active');
+
+        if (qualifiedOnly) {
+            if (setId == "14") {
+                qualify(scrollableActiveId(), 25);
+            }
+            else if (setId == "30") {
+                qualify(scrollableActiveId(), 45);
+            }
+        } else {
+            unqualify(scrollableActiveId());
+        }
+    }
+
+    function scrollableActiveId() {
+        const activeTable = document.querySelector('.scrollable.active table');
+        return activeTable.id;
     }
 
     function filterTable() {
         const input = document.getElementById("searchInput").value.toLowerCase();
-        const table = document.getElementById("30-movers");
+        const table = document.getElementById(scrollableActiveId());
         const rows = table.getElementsByTagName("tr");
 
         for (let i = 1; i < rows.length; i++) { // Start at 1 to skip the header
             const rowText = rows[i].textContent.toLowerCase();
+            
             rows[i].style.display = rowText.includes(input) ? "" : "none";
         }
     }
@@ -442,30 +470,99 @@
     }
 
     let qualifiedOnly = false; // start by showing qualified rows
+    let newOnly = false;
 
-    function qualify(tableId, btn) {
+    function qualifyActiveMoverTable(btn) {
+    // Determine which mover table is currently active
+        const activeTable = document.querySelector('.scrollable.active table');
+        if (activeTable) {
+            toggleQualify(activeTable.id, btn);
+        }
+    }
+
+    function toggleQualify(tableId, btn) {
         btn.classList.toggle('active');
+
         qualifiedOnly = !qualifiedOnly;
 
+        if (qualifiedOnly) {
+            if (tableId == "14-movers") {
+                qualify(tableId, 25);
+            }
+            else if (tableId == "30-movers") {
+                qualify(tableId, 45);
+            }
+        } else {
+            unqualify(tableId);
+        }
+    }
+
+    function qualify(tableId, num) {
         const table = document.getElementById(tableId);
         const rows = table.querySelectorAll("tr");
 
-        // Skip the header row (index 0)
         for (let i = 1; i < rows.length; i++) {
-            const paCell = rows[i].cells[1]; // 2nd column = PA
+            const paCell = rows[i].cells[1]; // Assuming 2nd column is PA
             const pa = parseFloat(paCell.textContent);
 
-            if (qualifiedOnly) {
-            // Hide unqualified hitters
-            if (pa < 45) {
-                rows[i].style.display = "none";
-            } else {
-                rows[i].style.display = "";
+            rows[i].style.display = (pa >= num) ? "" : "none";
+        }
+    }
+
+    function unqualify(tableId) {
+        const table = document.getElementById(tableId);
+        const rows = table.querySelectorAll("tr");
+
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].style.display = ""; // Show all rows
+        }
+    }
+
+    function findNewHitters(btn) {
+        const activeTable = document.querySelector('.scrollable.active table');
+        if (activeTable) {
+            toggleNew(activeTable.id, btn);
+        }
+    }
+
+    function toggleNew(tableId, btn) {
+        btn.classList.toggle('active');
+        newOnly = !newOnly;
+
+        if (newOnly) {
+            if (tableId == "14-movers") {
+                newHitters(tableId);
             }
-            } else {
-            // Show all hitters
-            rows[i].style.display = "";
+            else if (tableId == "30-movers") {
+                newHitters(tableId);
             }
+        } else {
+            allHitters(tableId);
+        }
+    }
+
+    function allHitters(tableId) {
+        const table = document.getElementById(tableId);
+        const rows = table.querySelectorAll("tr");
+
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].style.display = ""; // Show all rows
+        }
+    }
+
+    function newHitters(tableId) {
+        const table = document.getElementById(tableId);
+        const rows = table.querySelectorAll("tr");
+
+        for (let i = 1; i < rows.length; i++) {
+            const wobaCell = rows[i].cells[7]; // Assuming 2nd column is PA
+            const woba = parseFloat(wobaCell.textContent);
+            const avgCell = rows[i].cells[8]; // Assuming 2nd column is PA
+            const avg = parseFloat(avgCell.textContent);
+
+            const bool = (woba == 0) && (avg == 0)
+
+            rows[i].style.display = (bool) ? "" : "none";
         }
     }
 </script>

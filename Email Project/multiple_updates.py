@@ -1,4 +1,4 @@
-import email_updater
+# import email_updater
 import savant_scraper
 from datetime import date, timedelta
 import pandas
@@ -7,7 +7,7 @@ import sys
 # email = sys.argv[1]
 # code = sys.argv[2]
 
-day = date(2025, 6, 13)
+day = date(2025, 6, 25)
 
 while day != date.today():
     df = savant_scraper.get_ev(day.year, day.month, day.day)

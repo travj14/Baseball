@@ -223,12 +223,13 @@ def period_comparison(soup, period_length):
         "Woba Diff": df["woba"] - df2["woba"],
         "Avg Diff": df["avg"] - df2["avg"],
         "Obp Diff": df["obp"] - df2["obp"],
-        "Slg Diff": df["slg"] - df2["slg"]
+        "Slg Diff": df["slg"] - df2["slg"],
+        "K Diff": df["k_rate"] - df2["k_rate"],
+        "Hard Hit Diff": df["hard_hit_rate"] - df2["hard_hit_rate"]
     })
     merged = df.merge(merged, left_index=True, right_index=True)
 
     merged = merged.droplevel('id')
-
     soup = change_html(soup, str(period_length) + "-movers", merged)
 
     return soup

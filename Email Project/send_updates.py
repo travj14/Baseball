@@ -1,4 +1,3 @@
-import email_updater
 import savant_scraper
 from datetime import date, timedelta
 import pandas as pd

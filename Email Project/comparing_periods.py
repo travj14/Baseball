@@ -30,6 +30,8 @@ avg_map = { 1: 1,
     3: 1,
     4: 1}
 
+k_map =  { 'Strikeout': 1}
+
 
 
 
@@ -41,12 +43,16 @@ df_14 = pd.read_csv("Game Data/14_day_ev.csv")
 def summarize(df):
 
     hard_hits = df[df["EV"] >= 95]
-
-    hard_hits = hard_hits.groupby(["id", "Batter"])['PA'].count()
-
+    hard_hits_count = hard_hits.groupby(["id", "Batter"])['PA'].count()
     pas = df.groupby(["id", "Batter"])['PA'].count()
+    
+    hard_hit_df = pd.DataFrame({
+        'hard_hits': hard_hits_count,
+        'PA': pas
+    }).fillna(0)
 
-    hard_hit_rate = hard_hits / pas
+    hard_hit_df['hard_hit_rate'] = hard_hit_df['hard_hits'] / hard_hit_df['PA']
+    hard_hit_df = hard_hit_df[['hard_hit_rate']]
 
     woba_df = df[~df['Result'].isin(['Caught Stealing 2B', 'Sac Bunt', 'Sac Fly', 'Sac Fly Double Play', 'Runner Out',
                                     'Catcher Interference', 'Intent Walk', 'Pickoff 1B', 'Pickoff 3B', 'Pickoff Error 1B',
@@ -94,7 +100,18 @@ def summarize(df):
         obp=('Result', 'mean')
     ).sort_values('PA', ascending=False)
 
-    print(obp)
+    k_df = df[~df['Result'].isin(['Caught Stealing 2B', 'Runner Out',
+                                    'Pickoff 1B', 'Pickoff 3B', 'Pickoff Error 1B',
+                                    'Caught Stealing 3B', 'Wild Pitch', 'Pickoff Error 1B', 'Stolen Base 2B',
+                                    'Pickoff Caught Stealing 3B', 'Pickoff Caught Stealing 2B', 'Pickoff 2B', 'Pickoff 3B'])]
+    k_df['Result'] = k_df['Result'].map(k_map).fillna(0).astype(int)
+
+    k = k_df.groupby(['id', 'Batter']).agg(
+        k_rate = ('Result', 'mean')
+    )
+
+    print(hard_hit_df)
+    print(k)
 
     merged = woba.merge(slg, left_index=True, right_index=True)
     merged = merged.merge(avg, left_index=True, right_index=True)
@@ -104,7 +121,11 @@ def summarize(df):
         'PA_x': 'PA',
         'AB_x': 'AB'
     })
-    merged = merged[['PA', 'AB', 'woba', 'avg', 'obp', 'slg']]
+    merged = merged.merge(k, left_index=True, right_index=True)
+    merged = merged.merge(hard_hit_df, left_index=True, right_index=True)
+
+    print(merged)
+    merged = merged[['PA', 'AB', 'woba', 'avg', 'obp', 'slg', 'k_rate', 'hard_hit_rate']]
 
     return merged
 
