@@ -7,7 +7,7 @@ import sys
 # email = sys.argv[1]
 # code = sys.argv[2]
 
-day = date(2025, 6, 25)
+day = date(2025, 7, 3)
 
 while day != date.today():
     df = savant_scraper.get_ev(day.year, day.month, day.day)
