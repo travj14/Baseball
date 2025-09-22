@@ -21,7 +21,7 @@ def create_game_dates():
 
 
 def day_offset(days=30):
-    today = date.today()
+    today = date(2025, 7, 13)
 
     day = today + timedelta(days=-days)
 

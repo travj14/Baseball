@@ -7,9 +7,11 @@ import sys
 # email = sys.argv[1]
 # code = sys.argv[2]
 
-day = date(2025, 7, 3)
+day = date(2025, 7, 8)
 
-while day != date.today():
+next_date = date(2025, 7, 14)
+
+while day != next_date:
     df = savant_scraper.get_ev(day.year, day.month, day.day)
     df.to_csv("Game Data/ev_data" + savant_scraper.date_format(day.year, day.month, day.day) + ".csv", index=False)
 
