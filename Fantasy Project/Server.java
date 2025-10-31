@@ -19,6 +19,30 @@ public class Server {
     private HashMap<Integer, ArrayList<Bid>> bidMap = new HashMap<>();
     private ArrayList<Bid> bids = new ArrayList<>();
 
+    private LeagueInfo league;
+
+    private boolean serverPauseOn = false;
+
+    public Server(String name, int teamN, int budget, int rosterN, int startN) {
+        teams = new ArrayList<>();
+        teamMap = new HashMap<>();
+
+
+        for (int i = 0; i < 12; i++) {
+            Team team = new Team(50, 200);
+
+            teams.add(team);
+            teamMap.put(team.getTeamID(), team);
+        }
+
+        players = new ArrayList<>();
+        playerMap = new HashMap<>();
+
+        league = new LeagueInfo(name, teamN, budget, rosterN, startN);
+
+        fillPlayers();
+    }
+
     public Server() {
         teams = new ArrayList<>();
         teamMap = new HashMap<>();
@@ -111,6 +135,9 @@ public class Server {
      *  9. Routine Progress Save (*)
      *  10. Contract restructure
      * 
+     *  a. Server Player Adds
+     *  b. Server Player Modifications
+     * 
      * This list will most likely never be complete, and will continue to grow over time as new features are added
      * 
      * ALL INPUTS SHOULD BE VALID BEFORE BEING SENT
@@ -139,7 +166,9 @@ public class Server {
         int actingTeamID = Integer.parseInt(inputs[1]);
         Team actingTeam = teamMap.get(actingTeamID);
 
-        if (inputType != "3" || inputType != "4") {
+        if (serverPauseOn) {
+            return "Server Paused";
+        } else if (inputType != "3" || inputType != "4") {
             int playerID = Integer.parseInt(inputs[2]);
             Player player = playerMap.get(playerID);
 
@@ -175,6 +204,11 @@ public class Server {
                 }
 
                 actingTeam.restructureContract(player, newContract);
+            } else if (inputType == "9") {
+                Saver saver = new Saver();
+
+                saver.saveLeague(league);
+                saver.saveTeams(teams);
             }
         } 
         else if (inputType == "4") { // Needs to be fixed anyway, right now it is a copy of completed trades
@@ -241,6 +275,50 @@ public class Server {
                     break;
                 }
             }
+        } else if (inputType == "a") {
+            Player player = new Player();
+            player.setName(inputs[1], inputs[2]);
+
+            player.setAge(Integer.parseInt(inputs[3]));
+            player.setPos(inputs[4]);
+            player.setHeight(inputs[5]);
+            player.setWeight(inputs[6]);
+            
+            if (inputs.length >= 8) {
+                player.setNFLTeam(inputs[7]);
+            } else {
+                player.setNFLTeam(null);
+            }
+
+            playerMap.put(player.getPlayerID(), player);
+            players.add(player);
+        } else if (inputType == "b") {
+            int playerID = Integer.parseInt(inputs[1]);
+            Player player = playerMap.get(playerID);
+
+            if (inputs[2] != "") {
+                player.setAge(Integer.parseInt(inputs[2]));
+            }
+            if (inputs[3] != "") {
+                player.setPos(inputs[3]);
+            }
+            if (inputs[4] != "") {
+                player.setHeight(inputs[4]);
+            }
+            if (inputs[5] != "") {
+                player.setHeight(inputs[5]);
+            }
+
+            if (inputs.length >= 7) {
+                player.setNFLTeam(inputs[6]);
+            } else {
+                player.setNFLTeam(null);
+            }
+
+        } else if (inputType == "SERVERPAUSE1234") {
+            serverPauseOn = true;
+        } else if (inputType == "UnpauseServer") {
+            serverPauseOn = false;
         }
         return null;
     }
@@ -289,7 +367,7 @@ public class Server {
         bidMap.put(4, new ArrayList<>());
     }
 
-    public void addPicks(int year, int rounds) {
+    private void addPicks(int year, int rounds) {
 
         DraftPick newPick;
         for (Team team : teams) {
@@ -301,7 +379,7 @@ public class Server {
         }
     }
 
-    public void fillPlayers() {
+    private void fillPlayers() {
         String filepath = "sample_players.csv";
 
         try (BufferedReader br = new BufferedReader(new FileReader(filepath))) {
@@ -322,6 +400,18 @@ public class Server {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void refreshLatestPoint() {
+        Saver saver = new Saver();
+        league = saver.getLeague();
+        teams = saver.getTeams();
+
+        for (Team team : teams) {
+            teamMap.put(team.getTeamID(), team);
+        }
+
+        
     }
     
 }

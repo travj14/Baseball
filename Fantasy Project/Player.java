@@ -25,14 +25,17 @@ public class Player implements Comparable<Player> {
     public void setName(String firstName, String lastName) {
         setName(firstName, lastName, null);
     }
+    public String getFirstName() { return firstName; }
+    public String getLastName() { return lastName; }
+    public String getSuffix() { return suffix; }
 
     private int age;
     private String height;
     private String weight;
     private String position;
+
     private String NFLTeam;
-    private String team;
-    private int teamID;
+    private Team team;
     private String previousTeam;
 
     private int draftRound;
@@ -46,8 +49,8 @@ public class Player implements Comparable<Player> {
     public String getWeight() { return weight; }
     public String getPos() { return position; }
     public String getNFLTeam() { return NFLTeam; }
-    public String getTeam() { return team;}
-    public int getTeamID() { return teamID; }
+    public Team getTeam() { return team;}
+    public int getTeamID() { return team.getTeamID(); }
     public String getPreviousTeam() { return previousTeam; }
 
     public void setAge(int age) { this.age = age; }
@@ -55,9 +58,18 @@ public class Player implements Comparable<Player> {
     public void setWeight(String weight) { this.height =  weight; }
     public void setPos(String pos) { this.position = pos; }
     public void setNFLTeam(String NFLTeam) { this.NFLTeam = NFLTeam; }
-    public void setTeam(String team) { this.team = team;}
+    public void setTeam(Team team) { this.team = team;}
     public void setPreviousTeam(String previousTeam) { this.previousTeam = previousTeam; }
 
+    public void setDraftRound(int draftRound) { this.draftRound = draftRound; }
+    public void setOriginalDraftTeam(Team originalDraftTeam) { this.originalDraftTeam = originalDraftTeam; }
+    public void setDraftYear(int draftYear) { this.draftYear = draftYear; }
+    public void setPickInRound(int pickInRound) { this.pickInRound = pickInRound; }
+
+    public int getDraftRound() { return draftRound; }
+    public Team getOriginalDraftTeam() { return originalDraftTeam; }
+    public int getDraftYear() { return draftYear; }
+    public int getPickInRound() { return pickInRound; }
 
     public Player(ArrayList<Object> profile) {
         this();

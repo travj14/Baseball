@@ -12,8 +12,12 @@ public class Team {
     private ArrayList<ArrayList<Player>> incomingTrades;
     private ArrayList<ArrayList<Player>> outgoingTrades;
 
-
     public int getTeamID() { return teamID; }
+    public void OverrideTeamID(int ID) { teamID = ID; }
+    public String getUserName() { return ownerUserName; }
+    public String getPassWord() { return ownerPassword; }
+    public void setUserName(String ownerUserName) { this.ownerUserName = ownerUserName; }
+    public void setPassWord(String ownerPassword) { this.ownerPassword = ownerPassword; }
 
     private ArrayList<Player> roster;
     private int rosterSize;
@@ -29,6 +33,7 @@ public class Team {
     private int maxRosterSize;
     
     public String getName() { return teamName; }
+    public void setName(String name) { this.teamName = name; }
 
     public int getYearlyBudgetRemaining() {
         int spent = 0;
@@ -124,6 +129,14 @@ public class Team {
         rosterSize--;
 
         team.add(player, player.getContract());
+    }
+
+    public void tradeFor(Player player, Team team) {
+        roster.add(player);
+        contracts.remove(player.getContract());
+        rosterSize++;
+
+        team.remove(player);
     }
 
     public void sendPick(DraftPick pick, Team team) {
